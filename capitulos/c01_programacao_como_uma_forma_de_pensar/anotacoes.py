@@ -64,10 +64,41 @@ def funcoes_aritmeticas():
     # print(abs 42) # SyntaxError: invalid syntax
 
 
+def strings():
+    """Aborda strings"""
+    print("--- Demonstrando o que é uma String ---\n")
+    # Nota de estudo: Uma string é uma sequência de caracteres dentro
+    # de aspas:
+    print('Hello')
+    # Também podemos utilizar aspas duplas:
+    print("World")
+    # Aspas duplas são úteis quando precisamos incluir um apóstrofo
+    # na string, já que o apóstrofo é o mesmo símbolo que uma aspa
+    # simples:
+    print("it's a small ")
+    # Strings podem conter espaços, pontuações e números:
+    print('Well, ')
+    # O operador "+" funciona com strings; ele une duas strings em
+    # uma única string, o que é chamado de "concatenação":
+    print('Well, ' + "it's a small " + 'world.')
+    # O operador "*" também funciona com strings; ele cria múltiplas
+    # cópias de uma string e as concatena:
+    print('Spam, ' * 4)
+    # O Python disponibiliza a função "len", que calcula o comprimento
+    # de uma string:
+    print(len('Spam'))
+    # Ao criar uma string, certifique-se de utilizar apenas aspas retas.
+    # Utilizar crases (backticks), aspas inteligentes ou aspas curvas
+    # é considerado inválido e resultará em um erro de sintaxe:
+    # Para testar o erro, descomente a linha abaixo:
+    # print(`Hello`) # SyntaxError: invalid syntax
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
     # operadores_aritmeticos()
     # expressoes()
     # funcoes_aritmeticas()
+    # strings()
     pass
