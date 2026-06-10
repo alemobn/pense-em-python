@@ -94,6 +94,47 @@ def strings():
     # print(`Hello`) # SyntaxError: invalid syntax
 
 
+def valores_e_tipos():
+    """Aborda valores e tipos"""
+    # Nota de estudo: Um tipo de valor é conhecido como "tipo". Todo
+    # valor tem um tipo -- ou, em algumas ocasiões, dizemos que ele
+    # "pertence a" um tipo específico.
+    # O Python disponibiliza uma função chamada "type", que indica
+    # o tipo de qualquer valor.
+    # Um número inteiro tem o tipo "int":
+    print(type(2))
+    # Um número decimal, ou de ponto flutuante, tem o tipo "float":
+    print(type(42.0))
+    # E uma sequência de caracteres, ou string, tem o tipo "str":
+    print(type('Hello, World!'))
+    # Os tipos "int", "float" e "str" podem ser utilizados como
+    # funções. Por exemplo, "int" pode pegar um número de ponto
+    # flutuante e convertê-lo em um número inteiro (sempre
+    # arredondando para baixo):
+    print(int(42.9))
+    # Da mesma forma, "float" pode converter um número inteiro
+    # em um valor de ponto flutuante:
+    print(float(42))
+    # Números que estiverem dentro de aspas são strings (str):
+    print(type('126'))
+    # Se tentarmos utilizá-los como números, podemos nos deparar
+    # com um erro:
+    # Para testar o erro, descomente a linha abaixo:
+    # print('126' / 3)
+    # # TypeError: unsupported operand type(s) for /: 'str' and 'int'
+
+    # Se tivermos uma string que contém dígitos, podemos utilizar
+    # a função "int" para convertê-la em um número inteiro:
+    print(int('126') / 3)
+    # Da mesma forma, se a string contiver dígitos e um ponto decimal,
+    # podemos utilizar a função "float" para convertê-la em um número
+    # de ponto flutuante:
+    print(float('12.6'))
+    # Para números inteiros grandes, podemos utilizar underscores (isso
+    # tornará o código mais legível):
+    print(1_000_000)
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -101,4 +142,5 @@ if __name__ == "__main__":
     # expressoes()
     # funcoes_aritmeticas()
     # strings()
+    # valores_e_tipos()
     pass
