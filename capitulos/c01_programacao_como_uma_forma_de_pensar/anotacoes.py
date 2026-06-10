@@ -27,8 +27,20 @@ def operadores_aritmeticos():
     print("Exponenciação (**) 7 ** 2 =", 7 ** 2)
 
 
+def expressoes():
+    """Aborda o que é uma expressão"""
+    print("--- Demostrando o que é uma Expressão ---\n")
+    print("Expressão: 6 + 6 ** 2 =", 6 + 6 ** 2)
+    print("Expressão: 12 + 5 * 6 =", 12 + 5 * 6)
+    print("Expressão: (12 + 5) * 6 =", (12 + 5) * 6)
+    # Nota de estudo: Uma expressão é composta por um ou mais operadores
+    # e números.
+    # Toda expressão resulta em um Valor.
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
     # operadores_aritmeticos()
+    # expressoes()
     pass
