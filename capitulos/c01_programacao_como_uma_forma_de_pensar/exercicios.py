@@ -49,9 +49,30 @@ def exercicio_1_2():
     )
 
 
+def exercicio_1_3():
+    """Exercício 3 (Capítulo 1)"""
+    print(
+        "O que acontece se tivermos dois valores sem nenhum operador entre "
+        'eles, como em "4  2"?'
+        "\n"
+    )
+    # Descomente a linha abaixo caso queira testar o erro:
+    # print(4  2)
+    print(
+        "* R: O interpretador do Python gera um erro de sintaxe (SyntaxError: "
+        "invalid syntax). Isso acontece porque o Python analisa o código "
+        "esperando um operador matemático para realizar uma ação entre os "
+        "dois números. A mensagem complementar 'Perhaps you forgot a comma?' "
+        "surge porque a única forma válida de ter dois valores seguidos seria "
+        "separando-os por uma vírgula, como em uma sequência ou passagem de "
+        "argumentos."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
     # exercicio_1_1()
     # exercicio_1_2()
+    exercicio_1_3()
     pass
