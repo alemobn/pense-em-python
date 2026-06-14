@@ -185,6 +185,29 @@ def exercicio_1_8():
     )
 
 
+def exercicio_1_9():
+    """Exercício 9 (Capítulo 1)"""
+    print(
+        "Qual é a sua velocidade média em milhas por hora?"
+        "\n"
+    )
+    km_total = 10
+    minutos_base = 42
+    segundos_base = 42
+    milhas_total = km_total / 1.61
+    # Tempo total convertido puramente para horas
+    tempo_em_horas = (minutos_base + (segundos_base / 60)) / 60
+    # Velocidade = Distância / Tempo
+    velocidade_media = milhas_total / tempo_em_horas
+    velocidade_media_arredondada = f"{round(velocidade_media, 1)}"
+    print(velocidade_media_arredondada)
+    print(
+        "\n"
+        f"*R: A velocidade média é de {velocidade_media_arredondada} milhas "
+        "por hora."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -196,4 +219,5 @@ if __name__ == "__main__":
     # exercicio_1_6()
     # exercicio_1_7()
     # exercicio_1_8()
+    # exercicio_1_9()
     pass
