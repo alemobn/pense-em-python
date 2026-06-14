@@ -139,6 +139,23 @@ def exercicio_1_6():
     )
 
 
+def exercicio_1_7():
+    """Exercício 7 (Capítulo 1)"""
+    print(
+        "Quantas milhas existem em 10 quilômetros? Dica: uma milha é "
+        "equivalente a 1,61 quilômetro."
+        "\n"
+    )
+    uma_milha_em_km = 1.61
+    quilometros_totais = 10
+    milhas_totais = quilometros_totais / uma_milha_em_km
+    milhas_totais_arredondado = round(milhas_totais, 1)
+    print(milhas_totais_arredondado)
+    print(
+        f"\nEm 10 quilômetros existem {milhas_totais_arredondado} milhas."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -148,4 +165,5 @@ if __name__ == "__main__":
     # exercicio_1_4()
     # exercicio_1_5()
     # exercicio_1_6()
+    # exercicio_1_7()
     pass
