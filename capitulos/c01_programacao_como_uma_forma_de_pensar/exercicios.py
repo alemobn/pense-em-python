@@ -126,6 +126,19 @@ def exercicio_1_5():
     )
 
 
+def exercicio_1_6():
+    """Exercício 6 (Capítulo 1)"""
+    print(
+        "Quantos segundos existem em 42 minutos e 42 segundos?"
+        "\n"
+    )
+    segundos_totais = 42 * 60 + 42
+    print(segundos_totais)
+    print(
+        f"\nEm 42 minutos e 42 segundos, existem {segundos_totais} segundos"
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -134,4 +147,5 @@ if __name__ == "__main__":
     # exercicio_1_3()
     # exercicio_1_4()
     # exercicio_1_5()
+    # exercicio_1_6()
     pass
