@@ -69,10 +69,33 @@ def exercicio_1_3():
     )
 
 
+def exercicio_1_4():
+    """Exercício 4 (Capítulo 1)"""
+    print(
+        "Se chamarmos uma função como \"round(42.5)\", o que ocorre se "
+        "omitirmos um ou ambos os parênteses?"
+        "\n"
+    )
+    # Descomente abaixo a linha de sua preferência para testar o erro:
+    # print(round 42.5)
+    # print(round(42.5)
+    # print(round42.5))
+    print(
+        "* R:\n"
+        "Se a função for executada sem ambos os parênteses, o Python irá "
+        "gerar um erro de sintaxe (SyntaxError: invalid syntax).\n"
+        "Se for executada omitindo o parênteses de fechamento, o erro será "
+        "(SyntaxError: \"(\" was never closed).\n"
+        "Se for executada omitindo o parênteses de abertura, o erro será "
+        "(SyntaxError: unmatched \")\")."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
     # exercicio_1_1()
     # exercicio_1_2()
     # exercicio_1_3()
+    # exercicio_1_4()
     pass
