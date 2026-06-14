@@ -135,7 +135,8 @@ def exercicio_1_6():
     segundos_totais = 42 * 60 + 42
     print(segundos_totais)
     print(
-        f"\nEm 42 minutos e 42 segundos, existem {segundos_totais} segundos"
+        "\n*R: "
+        f"Em 42 minutos e 42 segundos, existem {segundos_totais} segundos"
     )
 
 
@@ -152,7 +153,8 @@ def exercicio_1_7():
     milhas_totais_arredondado = round(milhas_totais, 1)
     print(milhas_totais_arredondado)
     print(
-        f"\nEm 10 quilômetros existem {milhas_totais_arredondado} milhas."
+        "\n*R: "
+        f"Em 10 quilômetros existem {milhas_totais_arredondado} milhas."
     )
 
 
