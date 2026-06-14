@@ -30,8 +30,28 @@ def exercicio_1_1():
     )
 
 
+def exercicio_1_2():
+    """Exercício 2 (Capítulo 1)"""
+    print(
+        "Podemos utilizar um sinal de menos para indicar um número negativo, "
+        'como "-2". O que acontece se colocarmos um sinal de mais antes de um '
+        'número? E se escrevermos assim: "2++2"?'
+        "\n"
+    )
+    print(+2)
+    print(2++2)
+    print(
+        "\n"
+        '* R: Ao colocarmos "+2", estamos indicando explicitamente que o '
+        'número "2" é positivo. '
+        'A expressão "2++2" está definindo o segundo operando como positivo '
+        "e somando-o com número 2."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
     # exercicio_1_1()
+    # exercicio_1_2()
     pass
