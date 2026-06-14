@@ -158,6 +158,33 @@ def exercicio_1_7():
     )
 
 
+def exercicio_1_8():
+    """Exercício 8 (Capítulo 1)"""
+    print(
+        "Se você correr 10 quilômetros em 42 minutos e 42 segundos, "
+        "qual será o seu passo médio (tempo por milha em minutos e "
+        "segundos)?"
+        "\n"
+    )
+    km_total = 10
+    minutos_base = 42
+    segundos_base = 42
+    milhas_total = km_total / 1.61
+    # Tempo total convertido puramente para segundos
+    tempo_total_segundos = (minutos_base * 60) + segundos_base
+    # Passo médio em segundos por milha
+    passo_em_segundos = tempo_total_segundos / milhas_total
+    # Conversão para minutos e segundos
+    passo_minutos = int(passo_em_segundos // 60)
+    passo_segundos = int(passo_em_segundos % 60)
+    passo_medio = f"{passo_minutos} minutos e {passo_segundos} segundos"
+    print(passo_medio)
+    print(
+        "\n"
+        f"*R: O passo médio é de {passo_medio} por milha."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -168,4 +195,5 @@ if __name__ == "__main__":
     # exercicio_1_5()
     # exercicio_1_6()
     # exercicio_1_7()
+    # exercicio_1_8()
     pass
