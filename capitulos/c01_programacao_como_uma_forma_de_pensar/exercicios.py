@@ -91,6 +91,41 @@ def exercicio_1_4():
     )
 
 
+def exercicio_1_5():
+    """Exercício 5 (Capítulo 1)"""
+    print(
+        "É importante lembrar que toda expressão tem um valor, e todo valor "
+        "tem um tipo. Podemos utilizar a função \"type\" para identificar o "
+        "tipo de qualquer valor."
+        "\n"
+        "Qual é o tipo de valor nas seguintes expressões? Faça sua melhor "
+        "suposição para cada uma e depois utilize a função \"type\" para "
+        "descobrir."
+        "\n"
+    )
+    print(type(765))
+    print(type(2.718))
+    print(type('2 pi'))
+    print(type(abs(-7)))
+    print(type(abs(-7.0)))
+    print(type(abs))
+    print(type(int))
+    print(type(type))
+    print(
+        "\n"
+        "* R:\n"
+        "\"765\" -> <class 'int'>\n"
+        "\"2.718\" -> <class 'float'>\n"
+        "\"'2 pi'\" -> <class 'str'>\n"
+        "\"abs(-7)\" -> <class 'int'> (O valor retornado pela função é int)\n"
+        "\"abs(-7.0)\" -> <class 'float'> (O valor retornado é float)\n"
+        "\"abs\" -> <class 'builtin_function_or_method'> (É uma função "
+        "nativa)\n"
+        "\"int\" -> <class 'type'> (É a classe que define os inteiros)\n"
+        "\"type\" -> <class 'type'> (É a classe que define os próprios tipos)"
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -98,4 +133,5 @@ if __name__ == "__main__":
     # exercicio_1_2()
     # exercicio_1_3()
     # exercicio_1_4()
+    # exercicio_1_5()
     pass
