@@ -9,6 +9,8 @@ Tópicos estudados:
 - Valores e tipos
 - Linguagens formais e naturais
 - Depuração
+- Glossário
+- Exercícios
 """
 
 
