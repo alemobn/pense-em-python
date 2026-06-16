@@ -15,7 +15,9 @@ Tópicos estudados:
 
 
 def operadores_aritmeticos():
-    """Aborda operadores aritméticos"""
+    """
+    Demonstrar o comportamento dos operadores matemáticos básicos e divisões.
+    """
     print("--- Demonstração dos Operadores Aritméticos ---\n")
     print("Adição (+): 30 + 12 =", 30 + 12)
     print("Subtração (-): 43 - 1 =", 43 - 1)
@@ -30,7 +32,9 @@ def operadores_aritmeticos():
 
 
 def expressoes():
-    """Aborda o que é uma expressão"""
+    """
+    Exemplificar a precedência de operadores na construção de expressões.
+    """
     print("--- Demonstrando o que é uma Expressão ---\n")
     print("Expressão: 6 + 6 ** 2 =", 6 + 6 ** 2)
     print("Expressão: 12 + 5 * 6 =", 12 + 5 * 6)
@@ -41,7 +45,9 @@ def expressoes():
 
 
 def funcoes_aritmeticas():
-    """Aborda funções aritméticas"""
+    """
+    Analisar o uso de funções nativas para manipulação numérica (round e abs).
+    """
     print(
         "--- Demonstrando algumas Funções Aritméticas "
         "(Funções que operam com números) ---\n"
@@ -67,7 +73,9 @@ def funcoes_aritmeticas():
 
 
 def strings():
-    """Aborda strings"""
+    """
+    Demonstrar a manipulação de strings, concatenação, replicação e tamanho.
+    """
     print("--- Demonstrando o que é uma String ---\n")
     # Nota de estudo: Uma string é uma sequência de caracteres dentro
     # de aspas:
@@ -97,7 +105,9 @@ def strings():
 
 
 def valores_e_tipos():
-    """Aborda valores e tipos"""
+    """
+    Explorar a verificação de tipos primitivos e conversão de dados (casting).
+    """
     # Nota de estudo: Um tipo de valor é conhecido como "tipo". Todo
     # valor tem um tipo -- ou, em algumas ocasiões, dizemos que ele
     # "pertence a" um tipo específico.
