@@ -23,7 +23,7 @@ def operadores_aritmeticos():
     print("Subtração (-): 43 - 1 =", 43 - 1)
     print("Multiplicação (*): 6 * 7 =", 6 * 7)
     print("Divisão (/): 84 / 2 =", 84 / 2)
-    # Nota de estudo: O resultado de (/) é 42.0 (float) em vez de 42 (int).
+    # O resultado de (/) é 42.0 (float) em vez de 42 (int).
     # Divisões comuns em Python sempre retornam um número de ponto flutuante.
     # O operador (//) realiza a divisão inteira (floor division),
     # que sempre arredonda o resultado para baixo, em direção ao "piso".
@@ -39,7 +39,7 @@ def expressoes():
     print("Expressão: 6 + 6 ** 2 =", 6 + 6 ** 2)
     print("Expressão: 12 + 5 * 6 =", 12 + 5 * 6)
     print("Expressão: (12 + 5) * 6 =", (12 + 5) * 6)
-    # Nota de estudo: Uma expressão é composta por um ou mais operadores
+    # Uma expressão é composta por um ou mais operadores
     # e números.
     # Toda expressão resulta em um valor.
 
@@ -52,7 +52,7 @@ def funcoes_aritmeticas():
         "--- Demonstrando algumas Funções Aritméticas "
         "(Funções que operam com números) ---\n"
     )
-    # Nota de estudo: O Python oferece diversas funções que operam com
+    # O Python oferece diversas funções que operam com
     # números. Por exemplo, a função "round" recebe um número do tipo float
     # e o arredonda para o número inteiro mais próximo.
     print("round(42.4) =", round(42.4))
@@ -77,7 +77,7 @@ def strings():
     Demonstrar a manipulação de strings, concatenação, replicação e tamanho.
     """
     print("--- Demonstrando o que é uma String ---\n")
-    # Nota de estudo: Uma string é uma sequência de caracteres dentro
+    # Uma string é uma sequência de caracteres dentro
     # de aspas:
     print('Hello')
     # Também podemos utilizar aspas duplas:
@@ -108,7 +108,7 @@ def valores_e_tipos():
     """
     Explorar a verificação de tipos primitivos e conversão de dados (casting).
     """
-    # Nota de estudo: Um tipo de valor é conhecido como "tipo". Todo
+    # Um tipo de valor é conhecido como "tipo". Todo
     # valor tem um tipo -- ou, em algumas ocasiões, dizemos que ele
     # "pertence a" um tipo específico.
     # O Python disponibiliza uma função chamada "type", que indica
