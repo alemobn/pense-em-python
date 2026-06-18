@@ -44,7 +44,7 @@ def diagramas_de_estado():
     # colocar o nome com uma seta apontada para o seu valor:
     print('n ----> 17')
     print('pi ----> 3.141592653589793')
-    print('message ----> And now for something completely different')
+    print('message ----> \'And now for something completely different\'')
     # Esse tipo de figura é denominado "diagrama de estado" porque
     # ilustra a condição atual de cada uma das variáveis (pense
     # nisso como o estado da variável).
