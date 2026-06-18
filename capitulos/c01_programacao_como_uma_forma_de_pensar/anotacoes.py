@@ -108,6 +108,7 @@ def valores_e_tipos():
     """
     Explorar a verificação de tipos primitivos e conversão de dados (casting).
     """
+    print("--- Demonstração de Valores e Tipos ---\n")
     # Um tipo de valor é conhecido como "tipo". Todo
     # valor tem um tipo -- ou, em algumas ocasiões, dizemos que ele
     # "pertence a" um tipo específico.
