@@ -98,10 +98,41 @@ def nomes_de_variaveis():
     print(", ".join(palavras_reservadas))
 
 
+def instrucao_import():
+    """
+        Demonstrar o uso da instrução import para acessar módulos,
+        suas variáveis e funções.
+    """
+    print("--- Demonstração da Instrução Import ---\n")
+    # Para utilizar alguns recursos do Python, é necessário
+    # "importá-los". Por exemplo, a instrução a seguir importa
+    # o módulo "math":
+    import math
+    # Um módulo é uma coleção de variáveis e funções.
+    # O módulo math oferece uma variável chamada "pi", que
+    # armazena o valor da constante matemática conhecida
+    # como π. É possível mostrar seu valor dessa forma:
+    print(math.pi)
+    # Para utilizar uma variável em um módulo, é necessário
+    # empregar o "operador de ponto(.)" entre o nome do módulo
+    # e o nome da variável.
+    # O módulo math também contém funções. Por exemplo, "sqrt"
+    # calcula raízes quadradas:
+    print(math.sqrt(25))
+    # E "pow" eleva um número à potência de um segundo número:
+    print(math.pow(5, 2))
+    # Até agora, vimos duas maneiras de elevar um número a uma
+    # potência: podemos utilizar a função "math.pow" ou o
+    # operador de exponenciação, "**". Ambos são adequados,
+    # mas o operador é utilizado com mais frequência do que a
+    # função.
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
     # variaveis()
     # diagramas_de_estado()
     # nomes_de_variaveis()
+    # instrucao_import()
     pass
