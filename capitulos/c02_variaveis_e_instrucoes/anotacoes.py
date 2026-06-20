@@ -128,6 +128,34 @@ def instrucao_import():
     # função.
 
 
+def expressoes_e_instrucoes():
+    """
+        Diferenciar expressões e instruções através de exemplos de avaliação
+        e execução.
+    """
+    print("--- Demonstração de Expressões e Instruções ---\n")
+    import math
+    # Uma expressão pode consistir em um único valor, como um
+    # número inteiro, um número de ponto flutuante ou uma string.
+    # Também pode ser composta de uma coleção de valores e
+    # operadores.
+    # Além disso, expressões podem incluir nomes de variáveis e
+    # chamadas de função. Vejamos a seguir um exemplo de expressão
+    # que reúne vários desses elementos:
+    n = 17
+    print(19 + n + round(math.pi) * 2)
+    # Também vimos alguns tipos de instruções. Uma "instrução" é
+    # uma unidade de código que tem um efeito, mas nenhum valor.
+    # Por exemplo, uma instrução de atribuição cria uma variável
+    # e atribui um valor a ela, mas a instrução em si não tem valor:
+    # x = 42
+    # Da mesma forma, uma instrução de importação também tem um efeito:
+    # -- ela importa um módulo para que possamos utilizar os valores e
+    # funções que ele contém --, mas a instrução em si não produz um valor.
+    # Calcular o valor de uma expressão é o que chamamos de "avaliação".
+    # Executar uma instrução é chamado de "execução".
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -135,4 +163,5 @@ if __name__ == "__main__":
     # diagramas_de_estado()
     # nomes_de_variaveis()
     # instrucao_import()
+    # expressoes_e_instrucoes()
     pass
