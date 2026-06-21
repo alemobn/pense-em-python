@@ -176,6 +176,46 @@ def funcao_print():
     # exibidos.
 
 
+def argumentos():
+    """
+    Explicar o conceito de argumentos em funções, cobrindo parâmetros
+    opcionais, múltiplos e erros de tipo.
+    """
+    print("--- Demonstração de Argumentos ---\n")
+    import math
+    # Quando chamamos uma função, a expressão entre parênteses é chamada de
+    # "argumento".
+    # Algumas das funções que vimos até agora aceitam apenas um argumento,
+    # como a função "int":
+    print(int("101"))
+    # Outras funções aceitam dois argumentos, como é o caso de "math.pow":
+    print(math.pow(5, 2))
+    # Há também funções que podem receber argumentos adicionais, que são
+    # opcionais. Por exemplo, a função "int" pode aceitar um segundo
+    # argumento que especifica a base do número:
+    print(int("101", 2))  # A sequência de dígitos "101" na base "2"
+    # representa o número "5" na base "10".
+    # A função "round" também permite um segundo argumento opcional, que
+    # determina o número de casas decimais para o arredondamento:
+    print(round(math.pi, 3))
+    # Algumas funções conseguem aceitar qualquer quantidade de argumentos,
+    # como a função "print":
+    print("Any", "number", "of", "arguments")
+    # Se chamarmos uma função e fornecermos argumentos em excesso, um
+    # "TypeError" será gerado.
+    # Para testar o erro, descomente a linha abaixo:
+    # print(float("123.0", 2))  # TypeError: float expected at most 1
+    # argument, got 2
+    # Se fornecermos argumentos de menos, o resultado será o mesmo: um
+    # "TypeError".
+    # Para testar o erro, descomente a linha abaixo:
+    # print(math.pow(2))  # TypeError: pow expected 2 arguments, got 1
+    # Além disso, se passarmos um argumento de um tipo que a função não
+    # consegue manipular, também ocorrerá um "TypeError":
+    # Para testar o erro, descomente a linha abaixo:
+    # print(math.sqrt("123"))  # TypeError: must be real number, not str
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -185,4 +225,5 @@ if __name__ == "__main__":
     # instrucao_import()
     # expressoes_e_instrucoes()
     # funcao_print()
+    # argumentos()
     pass
