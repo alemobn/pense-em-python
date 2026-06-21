@@ -156,6 +156,26 @@ def expressoes_e_instrucoes():
     # Executar uma instrução é chamado de "execução".
 
 
+def funcao_print():
+    """
+        Demonstrar o uso da função print para exibir valores, expressões
+        e múltiplos argumentos.
+    """
+    print("--- Demonstração da Função Print ---\n")
+    import math
+    # A função "print" exibe valores e/ou expressões no console:
+    n = 17
+    print(n + 1)
+    # Ela também funciona com números de ponto flutuante e strings:
+    print("The value of pi is approximately")
+    print(math.pi)
+    # Também é possível utilizar uma sequência de expressões
+    # separadas por vírgula:
+    print("The value of pi is approximately", math.pi)
+    # Vale destacar que a função "print" insere um espaço entre os valores
+    # exibidos.
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -164,4 +184,5 @@ if __name__ == "__main__":
     # nomes_de_variaveis()
     # instrucao_import()
     # expressoes_e_instrucoes()
+    # funcao_print()
     pass
