@@ -216,6 +216,49 @@ def argumentos():
     # print(math.sqrt("123"))  # TypeError: must be real number, not str
 
 
+def comentarios():
+    """
+        Explicar o papel dos comentários no código e a importância de
+        documentar o motivo por trás das decisões de implementação.
+    """
+    print("--- Uso de Comentários ---\n")
+    # Comentários
+    print(
+        "À medida que os programas se tornam maiores e mais complexos, "
+        "tornam-se mais difíceis de compreender. As linguagens formais são "
+        "densas, e muitas vezes é complicado olhar para um trecho de código "
+        "e compreender o que ele faz ou o motivo pelo qual faz isso.\n"
+    )
+    print(
+        "Por essa razão, é recomendável adicionar notas aos seus programas "
+        "para explicar, em linguagem natural, o que o código está realizando. "
+        "Essas notas são chamadas de \"comentários\" e começam com símbolo de "
+        "cerquilha (#).\n"
+    )
+    # quantidade de segundos em 42:42
+    seconds = 42 * 60 + 42  # noqa: F841
+    # Também é possível colocar comentários ao final das linhas de código:
+    miles = 10 / 1.61  # 10 quilômetros em milhas # noqa: F841
+    print(
+        "Tudo que está após o # até o final da linha é ignorado e não afeta "
+        "a execução do programa. Os comentários são mais úteis quando "
+        "documentam algo no código que não é imediatamente óbvio. Podemos "
+        "assumir que o leitor compreende o que o código faz; portanto, é "
+        "mais útil explicar \"por que\" ele faz o que faz.\n"
+    )
+    # Esse comentário abaixo, por exemplo, é redundante e pouco útil:
+    v = 8  # atribui 8 ao v # noqa: F841
+    # Por outro lado, este comentário abaixo oferece informações valiosas
+    # que não estão no código:
+    v = 8  # velocidade em milhas por hora # noqa: F841
+    print(
+        "Nomes de variáveis bem escolhidos podem diminuir a necessidade de "
+        "comentários, mas nomes muito longos podem tornar expressões "
+        "complexas mais difíceis de ler. Portanto, é importante que haja um "
+        "equilíbrio."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -226,4 +269,5 @@ if __name__ == "__main__":
     # expressoes_e_instrucoes()
     # funcao_print()
     # argumentos()
+    # comentarios()
     pass
