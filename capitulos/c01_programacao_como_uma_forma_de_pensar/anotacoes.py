@@ -206,6 +206,47 @@ def linguagens_formais_e_naturais():
     # linguagem formal.
 
 
+def depuracao():
+    """
+    Explicar o conceito de depuração e a mentalidade correta para
+    lidar com erros no código.
+    """
+    print("--- Conceito de Depuração ---\n")
+    NEGRITO = "\033[1m"
+    DEFAULT = "\033[0m"
+    # Os programadores cometem erros. Por um capricho do destino, erros de
+    # programação são chamados de "bugs" (insetos) e o processo de rastreá-los
+    # é conhecido como "depuração" (debugging).
+    # Programar e, especialmente, depurar pode evocar emoções intensas. Se
+    # estiver enfrentando dificuldade com um determinado bug, é possível que
+    # você sinta frustração, desespero ou até mesmo constrangimento.
+    # Estar preparado para essas reações pode ajudar a lidar melhor com elas.
+    # Uma abordagem eficaz é encarar o computador como um funcionário com
+    # certas vantagens, como velocidade e precisão, e algumas desvantagens,
+    # como a falta de empatia e incapacidade de compreender um contexto mais
+    # amplo.
+    # Seu trabalho é ser um bom gerente: encontrar maneiras de aproveitar essas
+    # vantagens e atenuar as desvantagens. Além disso, é importante encontrar
+    # formas de controlar suas emoções para lidar com o problema sem deixar
+    # que suas reações interfiram na sua capacidade de trabalho.
+    # Aprender a depurar erros pode ser frustrante, mas é uma habilidade
+    # valiosa e aplicável a muitas atividades além da programação. Ao final de
+    # cada capítulo incluímos uma seção como esta, com sugestões para facilitar
+    # a depuração. Espero que sejam úteis!
+    print(
+        f"{NEGRITO}Bug:{DEFAULT} Um erro no código que impede "
+        "o funcionamento correto."
+    )
+    print(
+        f"{NEGRITO}Depuração:{DEFAULT} O processo de rastrear, compreender "
+        "e corrigir esses erros."
+    )
+    print(
+        f"{NEGRITO}Mentalidade:{DEFAULT} Tratar o computador de forma lógica "
+        "e gerenciar a frustração ao investigar os problemas."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -215,4 +256,5 @@ if __name__ == "__main__":
     # strings()
     # valores_e_tipos()
     # linguagens_formais_e_naturais()
+    # depuracao()
     pass
