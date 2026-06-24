@@ -148,6 +148,64 @@ def valores_e_tipos():
     print(1_000_000)
 
 
+def linguagens_formais_e_naturais():
+    """
+    Comparar linguagens naturais e formais,
+    destacando características como ambiguidade,
+    redundância e literalidade.
+    """
+    print("--- Comparativo: Linguagens Naturais e Formais ---\n")
+    NEGRITO = "\033[1m"
+    DEFAULT = "\033[0m"
+    # Linguagens Formais e Naturais:
+    print(
+        f"{NEGRITO}Linguagens naturais{DEFAULT} são as línguas -- ou seja, "
+        "os idiomas -- que as pessoas falam, como inglês, espanhol e francês. "
+        "Elas não foram criadas por ninguém -- evoluíram naturalmente ao "
+        "longo do tempo."
+    )
+    print(
+        f"{NEGRITO}Linguagens formais{DEFAULT}, por outro lado, são "
+        "desenvolvidas por pessoas para finalidades específicas. "
+        "Por exemplo, a notação utilizada por matemáticos é uma "
+        "linguagem formal excelente para representar relações entre "
+        "números e símbolos. As linguagens de programação são "
+        "outro exemplo de linguagens formais, projetadas para expressar "
+        "operações computacionais.\n"
+    )
+    # Embora as linguagens formais e naturais tenham muitas características
+    # em comum -- como símbolos, estrutura e sintaxe --, existem algumas
+    # diferenças notáveis:
+    print(
+        f"{NEGRITO}Ambiguidade{DEFAULT}: As linguagens naturais são repletas "
+        "de ambiguidade e as pessoas lidam com isso utilizando pistas "
+        "contextuais e outras informações. As linguagens formais são "
+        "projetadas para ser quase ou completamente livres de ambiguidade, "
+        "de modo que qualquer programa tenha um significado exato, "
+        "independentemente do contexto."
+    )
+    print(
+        f"{NEGRITO}Redundância{DEFAULT}: Para compensar a ambiguidade e "
+        "minimizar mal-entendidos, linguagens naturais utilizam muita "
+        "redundância. Por causa disso, muitas vezes são excessivamente "
+        "detalhadas. As linguagens formais são menos redundantes e "
+        "mais concisas."
+    )
+    print(
+        f"{NEGRITO}Literalidade{DEFAULT}: As linguagens naturais são repletas "
+        "de expressões e metáforas. Em contrapartida, linguagens formais "
+        "têm significados que são exatamente iguais ao que expressam."
+    )
+    # Como crescemos utilizando linguagens naturais, pode ser desafiador
+    # se ajustar a linguagens formais. Linguagens formais são mais densas
+    # que as naturais, então exigem mais tempo para a leitura. Além disso,
+    # a estrutura é importante, então nem sempre é melhor ler de cima para
+    # baixo e da esquerda para a direita. E os detalhes importam. Pequenos
+    # erros de ortografia e pontuação, que podem passar despercebidos em
+    # linguagens naturais, podem ter um impacto significativo em uma
+    # linguagem formal.
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -156,4 +214,5 @@ if __name__ == "__main__":
     # funcoes_aritmeticas()
     # strings()
     # valores_e_tipos()
+    # linguagens_formais_e_naturais()
     pass
