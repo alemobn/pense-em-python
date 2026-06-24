@@ -314,6 +314,78 @@ def depuracao():
     # programa é executado, mas não realiza o que era esperado.
 
 
+def glossario():
+    """
+    Exibir os principais termos técnicos e conceitos apresentados ao
+    longo do Capítulo 2.
+    """
+    print("--- Glossário do Capítulo 2 ---\n")
+    # Glossário
+    NEGRITO = "\033[1m"
+    DEFAULT = "\033[0m"
+    print(
+        f"{NEGRITO}argumento{DEFAULT}: Um valor passado para uma função "
+        "quando ela é chamada. Esse valor é atribuído ao parâmetro "
+        "correspondente na função."
+    )
+    print(
+        f"{NEGRITO}avaliar{DEFAULT}: Executar as operações em uma expressão "
+        "para calcular um valor."
+    )
+    print(
+        f"{NEGRITO}comentário{DEFAULT}: Texto incluído em um programa que "
+        "fornece informações sobre o código, mas não afeta sua execução."
+    )
+    print(
+        f"{NEGRITO}diagrama de estado{DEFAULT}: Uma representação gráfica que "
+        "mostra um conjunto de variáveis e os valores aos quais elas se "
+        "referem."
+    )
+    print(
+        f"{NEGRITO}erro de tempo de execução{DEFAULT}: Um erro que faz com "
+        "que um programa exiba uma mensagem de erro e seja encerrado."
+    )
+    print(
+        f"{NEGRITO}erro semântico{DEFAULT}: Um erro que faz com que o "
+        "programa execute a ação errada, mas sem gerar uma mensagem de erro."
+    )
+    print(
+        f"{NEGRITO}exceção{DEFAULT}: Um erro detectado durante a execução "
+        "do programa."
+    )
+    print(
+        f"{NEGRITO}executar{DEFAULT}: Executar uma instrução e realizar "
+        "o que ela especifica."
+    )
+    print(
+        f"{NEGRITO}instrução{DEFAULT}: Uma ou mais linhas de código que "
+        "representam um comando ou ação."
+    )
+    print(
+        f"{NEGRITO}instrução de atribuição{DEFAULT}: Uma instrução que "
+        "atribui um valor a uma variável."
+    )
+    print(
+        f"{NEGRITO}instrução de importação{DEFAULT}: Uma instrução que "
+        "lê um arquivo de módulo e cria um objeto de módulo."
+    )
+    print(
+        f"{NEGRITO}módulo{DEFAULT}: Um arquivo que contém código Python, "
+        "incluindo definições de funções e, em alguns casos, outras "
+        "instruções."
+    )
+    print(
+        f"{NEGRITO}operador ponto{DEFAULT}: O operador de ponto (.), "
+        "utilizado para chamar uma função de outro módulo, especificando "
+        "o nome do módulo seguido de um ponto e do nome da função."
+    )
+    print(
+        f"{NEGRITO}palavra reservada{DEFAULT}: Uma palavra especial utilizada "
+        "para especificar a estrutura de um programa."
+    )
+    print(f"{NEGRITO}variável{DEFAULT}: Um nome que se refere a um valor.")
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -326,4 +398,5 @@ if __name__ == "__main__":
     # argumentos()
     # comentarios()
     # depuracao()
+    # glossario()
     pass
