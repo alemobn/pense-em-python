@@ -259,6 +259,61 @@ def comentarios():
     )
 
 
+def depuracao():
+    """
+    Explicar as três categorias principais de erros em Python com exemplos
+    práticos.
+    """
+    print("--- Categorias de Erros (Depuração) ---\n")
+    NEGRITO = "\033[1m"
+    DEFAULT = "\033[0m"
+    # Existem três tipos de erros que podem surgir em um programa: erros de
+    # sintaxe, erros de tempo de execução e erros semânticos. É útil
+    # diferenciar esses tipos de erros para rastreá-los e corrigi-los mais
+    # rapidamente:
+    print(
+        f"{NEGRITO}Erro de sintaxe{DEFAULT}: \"Sintaxe\" diz respeito à "
+        "estrutura de um programa e suas respectivas regras. Se houver "
+        "um erro de sintaxe em qualquer parte do seu código, o Python não "
+        "conseguirá executá-lo. Neste caso, ele exibirá uma mensagem de "
+        "erro imediatamente."
+    )
+    print(
+        f"{NEGRITO}Erro de tempo de execução{DEFAULT}: Se o seu programa não "
+        "apresentar erros de sintaxe, ele poderá ser executado. Contudo, se "
+        "algo der errado durante a execução, o Python exibirá uma mensagem de "
+        "erro e interromperá o programa. Esse tipo de erro é chamado de erro "
+        "de tempo de execução. Também é conhecido como \"exceção\", pois "
+        "indica que algo fora do comum ocorreu."
+    )
+    print(
+        f"{NEGRITO}Erro semântico{DEFAULT}: O terceiro tipo de erro é o "
+        "\"semântico\", que se refere ao significado do código. Quando "
+        "há um erro semântico no seu programa, ele será executado sem "
+        "gerar mensagens de erro, mas não produzirá o resultado desejado. "
+        "Identificar erros semânticos pode ser desafiador, pois exige uma "
+        "análise retroativa, observando a saída do programa e tentando "
+        "compreender o que ele realmente está fazendo."
+    )
+    # Como vimos, utilizar um nome inválido é considerado um erro de sintaxe:
+    # Para testar o erro, descomente a linha abaixo:
+    # million! = 1000000  # SyntaxError: invalid syntax
+    # -------------------------------------------------------------
+    # Se utilizarmos um operador com um tipo não suportado, um erro de tempo
+    # de execução será gerado:
+    # Para testar o erro, descomente a linha abaixo:
+    # print("126" / 3)  # TypeError: unsupported operand type(s) for /
+    # -------------------------------------------------------------
+    # Por fim, vejamos um exemplo de erro semântico. Imagine que queremos
+    # calcular a média entre "1" e "3", mas nos confundimos com a ordem das
+    # operações e escrevemos o código da seguinte forma:
+    media = 1 + 3 / 2  # noqa: F841
+    # Quando essa expressão é avaliada, ela não gera uma mensagem de erro,
+    # ou seja, não há erro de sintaxe nem de tempo de execução. No entanto,
+    # o resultado não será correto. Trata-se de um erro semântico, pois o
+    # programa é executado, mas não realiza o que era esperado.
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -270,4 +325,5 @@ if __name__ == "__main__":
     # funcao_print()
     # argumentos()
     # comentarios()
+    # depuracao()
     pass
