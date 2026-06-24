@@ -247,6 +247,88 @@ def depuracao():
     )
 
 
+def glossario():
+    """
+    Exibir os principais termos técnicos e conceitos apresentados ao
+    longo do Capítulo 1.
+    """
+    print("--- Glossário do Capítulo 1 ---\n")
+    NEGRITO = "\033[1m"
+    DEFAULT = "\033[0m"
+    # Glossário:
+    print(f"{NEGRITO}bug{DEFAULT}: Um erro em um programa.")
+    print(
+        f"{NEGRITO}chamada de função{DEFAULT}: Uma expressão -- ou parte de "
+        "uma expressão -- que executa uma função. É composta do nome da "
+        "função seguido de uma lista de argumentos entre parênteses."
+    )
+    print(
+        f"{NEGRITO}concatenação{DEFAULT}: Ação de juntar duas strings pelas "
+        "extremidades."
+    )
+    print(
+        f"{NEGRITO}depuração{DEFAULT}: O processo de encontrar e corrigir "
+        "(depurar) bugs."
+    )
+    print(
+        f"{NEGRITO}divisão inteira{DEFAULT}: Um operador, //, que divide "
+        "dois números e arredonda para um valor inteiro."
+    )
+    print(
+        f"{NEGRITO}erro de sintaxe{DEFAULT}: Um erro em um programa que "
+        "torna sua análise impossível -- e por isso impossível de interpretar."
+    )
+    print(
+        f"{NEGRITO}expressão{DEFAULT}: Uma combinação de variáveis, valores "
+        "e operadores."
+    )
+    print(
+        f"{NEGRITO}função{DEFAULT}: Uma sequência nomeada de instruções que "
+        "executa alguma operação útil. As funções podem aceitar argumentos "
+        "ou não, e podem ou não produzir algum resultado."
+    )
+    print(
+        f"{NEGRITO}linguagem formal{DEFAULT}: Qualquer linguagem projetada "
+        "por pessoas com objetivos específicos, como representar ideias "
+        "matemáticas ou programas de computador. Todas as linguagens de "
+        "programação são linguagens formais."
+    )
+    print(
+        f"{NEGRITO}linguagem natural{DEFAULT}: Qualquer linguagem (idioma) "
+        "que as pessoas falam e que se desenvolveu naturalmente."
+    )
+    print(
+        f"{NEGRITO}número inteiro{DEFAULT}: Um tipo que representa números "
+        "inteiros."
+    )
+    print(
+        f"{NEGRITO}operador aritmético{DEFAULT}: Um símbolo, como + e *, "
+        "que indica uma operação aritmética como adição ou multiplicação."
+    )
+    print(
+        f"{NEGRITO}operando{DEFAULT}: Um dos valores sobre os quais um "
+        "operador atua."
+    )
+    print(
+        f"{NEGRITO}ponto-flutuante{DEFAULT}: Um tipo que representa números "
+        "com partes fracionárias."
+    )
+    print(
+        f"{NEGRITO}string{DEFAULT}: Um tipo que representa sequências de "
+        "caracteres."
+    )
+    print(
+        f"{NEGRITO}tipo{DEFAULT}: Uma categoria de valores. Os tipos que "
+        "abordamos até agora são números inteiros (int), números "
+        "de ponto flutuante ou decimais (float) e strings (str)."
+    )
+    print(
+        f"{NEGRITO}valor{DEFAULT}: Um número inteiro, número de ponto "
+        "flutuante ou string -- ou um dos outros tipos de valores que veremos "
+        "mais adiante."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -257,4 +339,5 @@ if __name__ == "__main__":
     # valores_e_tipos()
     # linguagens_formais_e_naturais()
     # depuracao()
+    # glossario()
     pass
