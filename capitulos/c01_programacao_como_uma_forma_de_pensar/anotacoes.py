@@ -234,15 +234,15 @@ def depuracao():
     # cada capítulo incluímos uma seção como esta, com sugestões para facilitar
     # a depuração. Espero que sejam úteis!
     print(
-        f"{NEGRITO}Bug:{DEFAULT} Um erro no código que impede "
+        f"{NEGRITO}Bug{DEFAULT}: Um erro no código que impede "
         "o funcionamento correto."
     )
     print(
-        f"{NEGRITO}Depuração:{DEFAULT} O processo de rastrear, compreender "
+        f"{NEGRITO}Depuração{DEFAULT}: O processo de rastrear, compreender "
         "e corrigir esses erros."
     )
     print(
-        f"{NEGRITO}Mentalidade:{DEFAULT} Tratar o computador de forma lógica "
+        f"{NEGRITO}Mentalidade{DEFAULT}: Tratar o computador de forma lógica "
         "e gerenciar a frustração ao investigar os problemas."
     )
 
