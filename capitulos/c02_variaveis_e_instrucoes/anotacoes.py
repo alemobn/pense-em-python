@@ -100,8 +100,8 @@ def nomes_de_variaveis():
 
 def instrucao_import():
     """
-        Demonstrar o uso da instrução import para acessar módulos,
-        suas variáveis e funções.
+    Demonstrar o uso da instrução import para acessar módulos,
+    suas variáveis e funções.
     """
     print("--- Demonstração da Instrução Import ---\n")
     # Para utilizar alguns recursos do Python, é necessário
@@ -130,8 +130,8 @@ def instrucao_import():
 
 def expressoes_e_instrucoes():
     """
-        Diferenciar expressões e instruções através de exemplos de avaliação
-        e execução.
+    Diferenciar expressões e instruções através de exemplos de avaliação
+    e execução.
     """
     print("--- Demonstração de Expressões e Instruções ---\n")
     import math
@@ -158,8 +158,8 @@ def expressoes_e_instrucoes():
 
 def funcao_print():
     """
-        Demonstrar o uso da função print para exibir valores, expressões
-        e múltiplos argumentos.
+    Demonstrar o uso da função print para exibir valores, expressões
+    e múltiplos argumentos.
     """
     print("--- Demonstração da Função Print ---\n")
     import math
@@ -218,8 +218,8 @@ def argumentos():
 
 def comentarios():
     """
-        Explicar o papel dos comentários no código e a importância de
-        documentar o motivo por trás das decisões de implementação.
+    Explicar o papel dos comentários no código e a importância de
+    documentar o motivo por trás das decisões de implementação.
     """
     print("--- Uso de Comentários ---\n")
     # Comentários
