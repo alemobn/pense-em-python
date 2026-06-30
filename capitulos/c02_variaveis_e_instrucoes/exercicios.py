@@ -29,9 +29,28 @@ def exercicio_2_2():
     )
 
 
+def exercicio_2_3():
+    """Exercício 3 (Capítulo 2)"""
+    print(
+        "Em algumas linguagens, cada instrução termina com um ponto e vírgula "
+        "(;). O que acontece se você colocar um ponto e vírgula no final de "
+        "uma instrução em Python?"
+    )
+    print(
+        "\n"
+        "O programa funciona normalmente. Em Python, o ponto e vírgula (;) "
+        "não é obrigatório no final das linhas porque a quebra de linha já "
+        "indica o fim da instrução."
+        "\n"
+        "Obs: Se estiver utilizando um linter como o Flake8, ele acusará um "
+        "aviso de estilo (E703), mas o código executará sem erros."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
     # exercicio_2_1()
     # exercicio_2_2()
+    # exercicio_2_3()
     pass
