@@ -59,6 +59,20 @@ def exercicio_2_4():
     )
 
 
+def exercicio_2_5():
+    """Exercício 5 (Capítulo 2)"""
+    print(
+        "O que ocorre se você digitar o nome de um módulo incorretamente "
+        "e tentar importar 'maath'?"
+    )
+    print(
+        "\n"
+        "Se tentar importar um módulo inexistente ou digitar o nome do módulo "
+        "errado (maath), o Python acusará o erro: 'ModuleNotFoundError: "
+        "No module named 'maath''"
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -66,4 +80,5 @@ if __name__ == "__main__":
     # exercicio_2_2()
     # exercicio_2_3()
     # exercicio_2_4()
+    # exercicio_2_5()
     pass
