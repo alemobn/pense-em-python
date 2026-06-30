@@ -47,10 +47,23 @@ def exercicio_2_3():
     )
 
 
+def exercicio_2_4():
+    """Exercício 4 (Capítulo 2)"""
+    print(
+        "E se você colocar um ponto no final de uma instrução?"
+    )
+    print(
+        "\n"
+        "Se colocar um ponto (.) no final de alguma instrução, o Python "
+        "acusará um erro: 'SyntaxError: invalid syntax'."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
     # exercicio_2_1()
     # exercicio_2_2()
     # exercicio_2_3()
+    # exercicio_2_4()
     pass
