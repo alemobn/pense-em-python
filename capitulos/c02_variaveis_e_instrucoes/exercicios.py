@@ -16,8 +16,22 @@ def exercicio_2_1():
     )
 
 
+def exercicio_2_2():
+    """Exercício 2 (Capítulo 2)"""
+    print(
+        "E quanto a x = y = 1?"
+    )
+    print(
+        "\n"
+        "x = y = 1 é válido, mas não é recomendável. "
+        "O Python lê o valor literal (1) e faz com que, tanto x quanto y "
+        "apontem para o mesmo literal na memória (1)."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
     # exercicio_2_1()
+    # exercicio_2_2()
     pass
