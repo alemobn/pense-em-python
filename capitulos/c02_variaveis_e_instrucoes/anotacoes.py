@@ -15,6 +15,8 @@ Tópicos estudados:
 - Exercícios
 """
 
+from utilitarios import PADRAO, NEGRITO
+
 
 def variaveis():
     """
@@ -265,21 +267,19 @@ def depuracao():
     práticos.
     """
     print("--- Categorias de Erros (Depuração) ---\n")
-    NEGRITO = "\033[1m"
-    DEFAULT = "\033[0m"
     # Existem três tipos de erros que podem surgir em um programa: erros de
     # sintaxe, erros de tempo de execução e erros semânticos. É útil
     # diferenciar esses tipos de erros para rastreá-los e corrigi-los mais
     # rapidamente:
     print(
-        f"{NEGRITO}Erro de sintaxe{DEFAULT}: \"Sintaxe\" diz respeito à "
+        f"{NEGRITO}Erro de sintaxe{PADRAO}: \"Sintaxe\" diz respeito à "
         "estrutura de um programa e suas respectivas regras. Se houver "
         "um erro de sintaxe em qualquer parte do seu código, o Python não "
         "conseguirá executá-lo. Neste caso, ele exibirá uma mensagem de "
         "erro imediatamente."
     )
     print(
-        f"{NEGRITO}Erro de tempo de execução{DEFAULT}: Se o seu programa não "
+        f"{NEGRITO}Erro de tempo de execução{PADRAO}: Se o seu programa não "
         "apresentar erros de sintaxe, ele poderá ser executado. Contudo, se "
         "algo der errado durante a execução, o Python exibirá uma mensagem de "
         "erro e interromperá o programa. Esse tipo de erro é chamado de erro "
@@ -287,7 +287,7 @@ def depuracao():
         "indica que algo fora do comum ocorreu."
     )
     print(
-        f"{NEGRITO}Erro semântico{DEFAULT}: O terceiro tipo de erro é o "
+        f"{NEGRITO}Erro semântico{PADRAO}: O terceiro tipo de erro é o "
         "\"semântico\", que se refere ao significado do código. Quando "
         "há um erro semântico no seu programa, ele será executado sem "
         "gerar mensagens de erro, mas não produzirá o resultado desejado. "
@@ -321,69 +321,67 @@ def glossario():
     """
     print("--- Glossário do Capítulo 2 ---\n")
     # Glossário
-    NEGRITO = "\033[1m"
-    DEFAULT = "\033[0m"
     print(
-        f"{NEGRITO}argumento{DEFAULT}: Um valor passado para uma função "
+        f"{NEGRITO}argumento{PADRAO}: Um valor passado para uma função "
         "quando ela é chamada. Esse valor é atribuído ao parâmetro "
         "correspondente na função."
     )
     print(
-        f"{NEGRITO}avaliar{DEFAULT}: Executar as operações em uma expressão "
+        f"{NEGRITO}avaliar{PADRAO}: Executar as operações em uma expressão "
         "para calcular um valor."
     )
     print(
-        f"{NEGRITO}comentário{DEFAULT}: Texto incluído em um programa que "
+        f"{NEGRITO}comentário{PADRAO}: Texto incluído em um programa que "
         "fornece informações sobre o código, mas não afeta sua execução."
     )
     print(
-        f"{NEGRITO}diagrama de estado{DEFAULT}: Uma representação gráfica que "
+        f"{NEGRITO}diagrama de estado{PADRAO}: Uma representação gráfica que "
         "mostra um conjunto de variáveis e os valores aos quais elas se "
         "referem."
     )
     print(
-        f"{NEGRITO}erro de tempo de execução{DEFAULT}: Um erro que faz com "
+        f"{NEGRITO}erro de tempo de execução{PADRAO}: Um erro que faz com "
         "que um programa exiba uma mensagem de erro e seja encerrado."
     )
     print(
-        f"{NEGRITO}erro semântico{DEFAULT}: Um erro que faz com que o "
+        f"{NEGRITO}erro semântico{PADRAO}: Um erro que faz com que o "
         "programa execute a ação errada, mas sem gerar uma mensagem de erro."
     )
     print(
-        f"{NEGRITO}exceção{DEFAULT}: Um erro detectado durante a execução "
+        f"{NEGRITO}exceção{PADRAO}: Um erro detectado durante a execução "
         "do programa."
     )
     print(
-        f"{NEGRITO}executar{DEFAULT}: Executar uma instrução e realizar "
+        f"{NEGRITO}executar{PADRAO}: Executar uma instrução e realizar "
         "o que ela especifica."
     )
     print(
-        f"{NEGRITO}instrução{DEFAULT}: Uma ou mais linhas de código que "
+        f"{NEGRITO}instrução{PADRAO}: Uma ou mais linhas de código que "
         "representam um comando ou ação."
     )
     print(
-        f"{NEGRITO}instrução de atribuição{DEFAULT}: Uma instrução que "
+        f"{NEGRITO}instrução de atribuição{PADRAO}: Uma instrução que "
         "atribui um valor a uma variável."
     )
     print(
-        f"{NEGRITO}instrução de importação{DEFAULT}: Uma instrução que "
+        f"{NEGRITO}instrução de importação{PADRAO}: Uma instrução que "
         "lê um arquivo de módulo e cria um objeto de módulo."
     )
     print(
-        f"{NEGRITO}módulo{DEFAULT}: Um arquivo que contém código Python, "
+        f"{NEGRITO}módulo{PADRAO}: Um arquivo que contém código Python, "
         "incluindo definições de funções e, em alguns casos, outras "
         "instruções."
     )
     print(
-        f"{NEGRITO}operador ponto{DEFAULT}: O operador de ponto (.), "
+        f"{NEGRITO}operador ponto{PADRAO}: O operador de ponto (.), "
         "utilizado para chamar uma função de outro módulo, especificando "
         "o nome do módulo seguido de um ponto e do nome da função."
     )
     print(
-        f"{NEGRITO}palavra reservada{DEFAULT}: Uma palavra especial utilizada "
+        f"{NEGRITO}palavra reservada{PADRAO}: Uma palavra especial utilizada "
         "para especificar a estrutura de um programa."
     )
-    print(f"{NEGRITO}variável{DEFAULT}: Um nome que se refere a um valor.")
+    print(f"{NEGRITO}variável{PADRAO}: Um nome que se refere a um valor.")
 
 
 if __name__ == "__main__":

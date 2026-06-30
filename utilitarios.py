@@ -1,0 +1,2 @@
+NEGRITO = "\033[1m"
+PADRAO = "\033[0m"

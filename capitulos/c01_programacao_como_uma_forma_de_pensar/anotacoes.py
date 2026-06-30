@@ -13,6 +13,8 @@ Tópicos estudados:
 - Exercícios
 """
 
+from utilitarios import PADRAO, NEGRITO
+
 
 def operadores_aritmeticos():
     """
@@ -155,17 +157,15 @@ def linguagens_formais_e_naturais():
     redundância e literalidade.
     """
     print("--- Comparativo: Linguagens Naturais e Formais ---\n")
-    NEGRITO = "\033[1m"
-    DEFAULT = "\033[0m"
     # Linguagens Formais e Naturais:
     print(
-        f"{NEGRITO}Linguagens naturais{DEFAULT} são as línguas -- ou seja, "
+        f"{NEGRITO}Linguagens naturais{PADRAO} são as línguas -- ou seja, "
         "os idiomas -- que as pessoas falam, como inglês, espanhol e francês. "
         "Elas não foram criadas por ninguém -- evoluíram naturalmente ao "
         "longo do tempo."
     )
     print(
-        f"{NEGRITO}Linguagens formais{DEFAULT}, por outro lado, são "
+        f"{NEGRITO}Linguagens formais{PADRAO}, por outro lado, são "
         "desenvolvidas por pessoas para finalidades específicas. "
         "Por exemplo, a notação utilizada por matemáticos é uma "
         "linguagem formal excelente para representar relações entre "
@@ -177,7 +177,7 @@ def linguagens_formais_e_naturais():
     # em comum -- como símbolos, estrutura e sintaxe --, existem algumas
     # diferenças notáveis:
     print(
-        f"{NEGRITO}Ambiguidade{DEFAULT}: As linguagens naturais são repletas "
+        f"{NEGRITO}Ambiguidade{PADRAO}: As linguagens naturais são repletas "
         "de ambiguidade e as pessoas lidam com isso utilizando pistas "
         "contextuais e outras informações. As linguagens formais são "
         "projetadas para ser quase ou completamente livres de ambiguidade, "
@@ -185,14 +185,14 @@ def linguagens_formais_e_naturais():
         "independentemente do contexto."
     )
     print(
-        f"{NEGRITO}Redundância{DEFAULT}: Para compensar a ambiguidade e "
+        f"{NEGRITO}Redundância{PADRAO}: Para compensar a ambiguidade e "
         "minimizar mal-entendidos, linguagens naturais utilizam muita "
         "redundância. Por causa disso, muitas vezes são excessivamente "
         "detalhadas. As linguagens formais são menos redundantes e "
         "mais concisas."
     )
     print(
-        f"{NEGRITO}Literalidade{DEFAULT}: As linguagens naturais são repletas "
+        f"{NEGRITO}Literalidade{PADRAO}: As linguagens naturais são repletas "
         "de expressões e metáforas. Em contrapartida, linguagens formais "
         "têm significados que são exatamente iguais ao que expressam."
     )
@@ -212,8 +212,6 @@ def depuracao():
     lidar com erros no código.
     """
     print("--- Conceito de Depuração ---\n")
-    NEGRITO = "\033[1m"
-    DEFAULT = "\033[0m"
     # Os programadores cometem erros. Por um capricho do destino, erros de
     # programação são chamados de "bugs" (insetos) e o processo de rastreá-los
     # é conhecido como "depuração" (debugging).
@@ -234,15 +232,15 @@ def depuracao():
     # cada capítulo incluímos uma seção como esta, com sugestões para facilitar
     # a depuração. Espero que sejam úteis!
     print(
-        f"{NEGRITO}Bug{DEFAULT}: Um erro no código que impede "
+        f"{NEGRITO}Bug{PADRAO}: Um erro no código que impede "
         "o funcionamento correto."
     )
     print(
-        f"{NEGRITO}Depuração{DEFAULT}: O processo de rastrear, compreender "
+        f"{NEGRITO}Depuração{PADRAO}: O processo de rastrear, compreender "
         "e corrigir esses erros."
     )
     print(
-        f"{NEGRITO}Mentalidade{DEFAULT}: Tratar o computador de forma lógica "
+        f"{NEGRITO}Mentalidade{PADRAO}: Tratar o computador de forma lógica "
         "e gerenciar a frustração ao investigar os problemas."
     )
 
@@ -253,77 +251,75 @@ def glossario():
     longo do Capítulo 1.
     """
     print("--- Glossário do Capítulo 1 ---\n")
-    NEGRITO = "\033[1m"
-    DEFAULT = "\033[0m"
     # Glossário:
-    print(f"{NEGRITO}bug{DEFAULT}: Um erro em um programa.")
+    print(f"{NEGRITO}bug{PADRAO}: Um erro em um programa.")
     print(
-        f"{NEGRITO}chamada de função{DEFAULT}: Uma expressão -- ou parte de "
+        f"{NEGRITO}chamada de função{PADRAO}: Uma expressão -- ou parte de "
         "uma expressão -- que executa uma função. É composta do nome da "
         "função seguido de uma lista de argumentos entre parênteses."
     )
     print(
-        f"{NEGRITO}concatenação{DEFAULT}: Ação de juntar duas strings pelas "
+        f"{NEGRITO}concatenação{PADRAO}: Ação de juntar duas strings pelas "
         "extremidades."
     )
     print(
-        f"{NEGRITO}depuração{DEFAULT}: O processo de encontrar e corrigir "
+        f"{NEGRITO}depuração{PADRAO}: O processo de encontrar e corrigir "
         "(depurar) bugs."
     )
     print(
-        f"{NEGRITO}divisão inteira{DEFAULT}: Um operador, //, que divide "
+        f"{NEGRITO}divisão inteira{PADRAO}: Um operador, //, que divide "
         "dois números e arredonda para um valor inteiro."
     )
     print(
-        f"{NEGRITO}erro de sintaxe{DEFAULT}: Um erro em um programa que "
+        f"{NEGRITO}erro de sintaxe{PADRAO}: Um erro em um programa que "
         "torna sua análise impossível -- e por isso impossível de interpretar."
     )
     print(
-        f"{NEGRITO}expressão{DEFAULT}: Uma combinação de variáveis, valores "
+        f"{NEGRITO}expressão{PADRAO}: Uma combinação de variáveis, valores "
         "e operadores."
     )
     print(
-        f"{NEGRITO}função{DEFAULT}: Uma sequência nomeada de instruções que "
+        f"{NEGRITO}função{PADRAO}: Uma sequência nomeada de instruções que "
         "executa alguma operação útil. As funções podem aceitar argumentos "
         "ou não, e podem ou não produzir algum resultado."
     )
     print(
-        f"{NEGRITO}linguagem formal{DEFAULT}: Qualquer linguagem projetada "
+        f"{NEGRITO}linguagem formal{PADRAO}: Qualquer linguagem projetada "
         "por pessoas com objetivos específicos, como representar ideias "
         "matemáticas ou programas de computador. Todas as linguagens de "
         "programação são linguagens formais."
     )
     print(
-        f"{NEGRITO}linguagem natural{DEFAULT}: Qualquer linguagem (idioma) "
+        f"{NEGRITO}linguagem natural{PADRAO}: Qualquer linguagem (idioma) "
         "que as pessoas falam e que se desenvolveu naturalmente."
     )
     print(
-        f"{NEGRITO}número inteiro{DEFAULT}: Um tipo que representa números "
+        f"{NEGRITO}número inteiro{PADRAO}: Um tipo que representa números "
         "inteiros."
     )
     print(
-        f"{NEGRITO}operador aritmético{DEFAULT}: Um símbolo, como + e *, "
+        f"{NEGRITO}operador aritmético{PADRAO}: Um símbolo, como + e *, "
         "que indica uma operação aritmética como adição ou multiplicação."
     )
     print(
-        f"{NEGRITO}operando{DEFAULT}: Um dos valores sobre os quais um "
+        f"{NEGRITO}operando{PADRAO}: Um dos valores sobre os quais um "
         "operador atua."
     )
     print(
-        f"{NEGRITO}ponto-flutuante{DEFAULT}: Um tipo que representa números "
+        f"{NEGRITO}ponto-flutuante{PADRAO}: Um tipo que representa números "
         "com partes fracionárias."
     )
     print(
-        f"{NEGRITO}string{DEFAULT}: Um tipo que representa sequências de "
+        f"{NEGRITO}string{PADRAO}: Um tipo que representa sequências de "
         "caracteres."
     )
     print(
-        f"{NEGRITO}tipo{DEFAULT}: Uma categoria de valores. Os tipos que "
+        f"{NEGRITO}tipo{PADRAO}: Uma categoria de valores. Os tipos que "
         "abordamos até agora são números inteiros (int), números "
         "de ponto flutuante ou decimais (float) e strings (str)."
     )
     print(
-        f"{NEGRITO}valor{DEFAULT}: Um número inteiro, número de ponto "
+        f"{NEGRITO}valor{PADRAO}: Um número inteiro, número de ponto "
         "flutuante ou string -- ou um dos outros tipos de valores que veremos "
         "mais adiante."
     )
