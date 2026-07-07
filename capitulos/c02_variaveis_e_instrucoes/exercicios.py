@@ -94,6 +94,25 @@ def exercicio_2_6():
     )
 
 
+def exercicio_2_7():
+    """Exercício 7 (Capítulo 2)"""
+    print(
+        "Existe uma regra na trigonometria que diz que, para qualquer valor "
+        "de x, (cos x)² + (sin x)² = 1. Vamos verificar se isso é verdade "
+        "para um valor específico de x, como 42.\n"
+        "Crie uma variável chamada 'x' com esse valor. Depos utilize as "
+        "funções 'math.cos' e 'math.sin' para calcular o seno e o cosseno "
+        "de 'x', e a soma de seus quadrados.\n"
+        "O resultado deve ser pŕoximo de 1. Pode não ser exatamente 1 porque "
+        "a aritmética de ponto flutuante não é exata -- é apenas uma "
+        "aproximação."
+        "\n"
+    )
+    import math
+    x = math.radians(42)
+    print((math.cos(x)) ** 2 + (math.sin(x)) ** 2)
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -103,4 +122,5 @@ if __name__ == "__main__":
     # exercicio_2_4()
     # exercicio_2_5()
     # exercicio_2_6()
+    # exercicio_2_7()
     pass
