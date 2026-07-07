@@ -73,6 +73,27 @@ def exercicio_2_5():
     )
 
 
+def exercicio_2_6():
+    """Exercício 6 (Capítulo 2)"""
+    print(
+        "O volume de uma esfera com raio r é: V = (4/3) * π * r³. Qual seria "
+        "o volume de uma esfera com raio 5? Comece criando uma variável "
+        "chamada 'radius' e depois armazene o resultado em uma variável "
+        "chamada 'volume'. Exiba o resultado. Adicione comentários para "
+        "indicar que 'radius' está em centímetros e 'volume' em centímetros "
+        "cúbicos."
+    )
+    import math
+    # radius está em centímetros (cm)
+    radius = 5
+    # o volume está em centímetros cúbicos (cm³)
+    volume = (4 / 3) * math.pi * radius ** 3
+    print(
+        "\n"
+        f"O volume de uma esfera com raio 5cm é '{volume}' (em cm³)."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -81,4 +102,5 @@ if __name__ == "__main__":
     # exercicio_2_3()
     # exercicio_2_4()
     # exercicio_2_5()
+    # exercicio_2_6()
     pass
