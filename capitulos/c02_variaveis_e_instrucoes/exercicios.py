@@ -113,6 +113,41 @@ def exercicio_2_7():
     print((math.cos(x)) ** 2 + (math.sin(x)) ** 2)
 
 
+def exercicio_2_8():
+    """Exercício 8 (Capítulo 2)"""
+    print(
+        "Além de 'pi', outra variável definida no módulo 'math' é 'e', "
+        "que representa a base do logaritmo natural, escrita na notação "
+        "matemática como 'e'. Se você ainda não estiver familiarizado com "
+        "esse valor, pergunte a um assistente virtual: 'O que é 'math.e'? "
+        "Agora, vamos calcular e² de três maneiras diferentes:"
+        "\n"
+        "1. Utilize 'math.e' e o operador de exponenciação (**).\n"
+        "2. Utilize 'math.pow' para elevar 'math.e' à potência 2.\n"
+        "3. Utilize 'math.exp', que recebe como argumento um valor, 'x', "
+        "e calcula e²."
+        "\n"
+    )
+    import math
+    print(math.e ** 2)
+    print(math.pow(math.e, 2))
+    print(math.exp(2))
+    print(
+        "\n"
+        "Talvez você note que o último resultado pode ser ligeiramente "
+        "diferente dos outros dois. Tente descobrir qual desses resultados "
+        "é o mais preciso."
+    )
+    print(
+        "\n"
+        "* R: 'math.exp' retornará o resultado com a maior precisão. O motivo "
+        "disso se dá ao fato de 'math.exp' utilizar algoritmos em C para "
+        "realizar o cálculo, o que minimiza ao máximo o erro de ponto "
+        "flutuante do padrão 'IEEE 754'. Ele evita perdas nas últimas casas "
+        "decimais."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -123,4 +158,5 @@ if __name__ == "__main__":
     # exercicio_2_5()
     # exercicio_2_6()
     # exercicio_2_7()
+    # exercicio_2_8()
     pass
