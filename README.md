@@ -54,7 +54,7 @@ python capitulos/<capitulo>/exercicios.py
 Abaixo está o índice completo da 3ª Edição para acompanhamento do progresso dos estudos:
 
 - [x] **Capítulo 1:** Programação como uma forma de pensar
-- [ ] **Capítulo 2:** Variáveis e instruções
+- [x] **Capítulo 2:** Variáveis e instruções
 - [ ] **Capítulo 3:** Funções
 - [ ] **Capítulo 4:** Funções e interfaces
 - [ ] **Capítulo 5:** Condicionais e recursão
