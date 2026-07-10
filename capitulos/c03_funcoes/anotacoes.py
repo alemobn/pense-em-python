@@ -94,9 +94,54 @@ def parametros():
     print_twice(line)
 
 
+def chamando_funcoes():
+    """
+    Demonstra a composição de funções, ilustrando como pequenas funções
+    especializadas podem ser combinadas dentro de outras funções para
+    executar tarefas mais complexas.
+    """
+    print("--- Chamando Funções ---\n")
+    print(
+        "Uma vez que a função esteja definida, podemos utilizá-la dentro "
+        "de outra função. Para ilustrar, vamos criar funções que exibem "
+        "(imprimem) a letra de 'The Spam Song':\n"
+    )
+
+    # Função inicial que recebe dois parâmetros:
+    def repeat(word, n):
+        print(word * n)
+
+    spam = "Spam, "
+
+    # Exibindo a primeira linha da música:
+    # repeat(spam, 4)
+
+    def first_two_lines():
+        repeat(spam, 4)
+        repeat(spam, 4)
+
+    # Exibindo as primeiras duas linhas da música:
+    # first_two_lines()
+
+    def last_three_lines():
+        repeat(spam, 2)
+        print("(Lovely Spam, Wonderful Spam!)")
+        repeat(spam, 2)
+
+    # Exibindo as três últimas linhas da música:
+    # last_three_lines()
+
+    def print_verse():
+        first_two_lines()
+        last_three_lines()
+
+    print_verse()
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
     # definindo_novas_funcoes()
     # parametros()
+    # chamando_funcoes()
     pass
