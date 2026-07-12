@@ -138,10 +138,84 @@ def chamando_funcoes():
     print_verse()
 
 
+def repeticao():
+    """
+    Demonstra o uso da instrução 'for' para repetir blocos de código e ilustra
+    como encapsular loops dentro de funções parametrizadas.
+    """
+    print("--- Repetição ---\n")
+    print(
+        "Se quisermos exibir mais de um verso, podemos utilizar uma "
+        "instrução 'for'. Vejamos um exemplo simples:\n"
+    )
+    # A primeira linha começa com a palavra reservada 'for', seguida de
+    # uma nova variável chamada 'i' e outra palavra reservada, 'in'. Ela
+    # utiliza a função 'range' para criar uma sequência de dois valores,
+    # que são '0' e '1'. Em Python, quando começamos a contar, geralmente
+    # começamos do 0.
+    for i in range(2):  # Cabeçalho da instrução
+        print(i)  # Corpo do for (precisa ser indentado)
+
+    print(
+        "\nAqui está um exemplo de como podemos utilizar um loop 'for' para "
+        "exibir dois versos da música:\n"
+    )
+
+    # ----- Trecho da função 'chamando_funcoes' copiado para demonstração -----
+
+    # Função inicial que recebe dois parâmetros:
+    def repeat(word, n):
+        print(word * n)
+
+    spam = "Spam, "
+
+    # Exibindo a primeira linha da música:
+    # repeat(spam, 4)
+
+    def first_two_lines():
+        repeat(spam, 4)
+        repeat(spam, 4)
+
+    # Exibindo as primeiras duas linhas da música:
+    # first_two_lines()
+
+    def last_three_lines():
+        repeat(spam, 2)
+        print("(Lovely Spam, Wonderful Spam!)")
+        repeat(spam, 2)
+
+    # Exibindo as três últimas linhas da música:
+    # last_three_lines()
+
+    def print_verse():
+        first_two_lines()
+        last_three_lines()
+
+    for i in range(2):
+        print(f"Verse {i}:")
+        print_verse()
+        print()
+
+    # Também é possível colocar um loop 'for' dentro de uma função:
+    def print_n_verses(n):
+        print(
+            "Demonstrando o funcionamento de um loop 'for' dentro de uma "
+            "função:\n"
+            "-----------------------------\n"
+        )
+        # Mesmo que a variável 'i' não seja utilizada, é necessário declará-la
+        for i in range(n):
+            print_verse()
+            print()
+
+    print_n_verses(3)
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
     # definindo_novas_funcoes()
     # parametros()
     # chamando_funcoes()
+    # repeticao()
     pass
