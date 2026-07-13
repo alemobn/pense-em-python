@@ -407,6 +407,47 @@ def por_que_utilizar_funcoes():
     )
 
 
+def depuracao():
+    """
+    Aborda a filosofia e as melhores práticas de depuração (debugging),
+    destacando a importância do desenvolvimento incremental (passos menores)
+    e o paralelo entre depurar e o método científico.
+    """
+    print("--- Depuração ---\n")
+    print(
+        "Depurar código pode ser uma tarefa frustrante, mas também é "
+        "desafiadora, interessante e, em certos momentos, até divertida. "
+        "É, sem dúvida, uma das habilidades mais importantes que você pode "
+        "desenvolver."
+    )
+    print(
+        "De certa forma, depurar é semelhante ao trabalho de um detetive. "
+        "Você tem pistas e precisa deduzir os processos e eventos que levaram "
+        "aos resultados observados."
+    )
+    print(
+        "A depuração também se assemelha à ciência experimental. Uma vez "
+        "que você tenha uma ideia do que pode estar errado, basta modificar "
+        "o programa e testá-lo novamente. Se sua hipótese estiver correta, "
+        "você poderá prever o resultado da alteração e estará mais próximo "
+        "de ter um programa funcional. Se a hipótese estiver errada, será "
+        "necessário formular uma nova."
+    )
+    print(
+        "Para algumas pessoas, programar e depurar são a mesma coisa; ou "
+        "seja, programar é o processo de depurar um programa de forma gradual "
+        "até que ele funcione exatamente como você deseja. A ideia é começar "
+        "com um programa funcional e fazer pequenas alterações, depurando à "
+        "medida que avança."
+    )
+    print(
+        "Se você perceber que está dedicando muito tempo à depuração, isso "
+        "geralmente indica que está escrevendo muito código antes de começar "
+        "a testar. Ao dar passos menores, você pode descobrir que progride "
+        "mais rapidamente."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -418,4 +459,5 @@ if __name__ == "__main__":
     # diagrama_de_pilha()
     # tracebacks()
     # por_que_utilizar_funcoes()
+    # depuracao()
     pass
