@@ -326,6 +326,55 @@ def diagrama_de_pilha():
     )
 
 
+def tracebacks():
+    """
+    Demonstra o conceito de traceback (pilha de rastreamento de erros),
+    ilustrando como o Python rastreia a sequência de chamadas de funções
+    de volta até a origem de um erro de tempo de execução.
+    """
+    print("--- Tracebacks (Rastreamento de Erros) ---\n")
+    print(
+        "Quando ocorre um erro de tempo de execução em uma função, o Python "
+        "exibe o nome da função que estava sendo executada, seguido pelo "
+        "nome da função que a chamou, e assim por diante, subindo na pilha de "
+        "chamadas.\n"
+    )
+    print(
+        "Para ilustrar, vamos definir uma versão da função 'print_twice' que "
+        "contém um erro -- ela tenta exibir 'cat', que é uma variável local "
+        "em outra função:\n"
+    )
+
+    # Para testar o erro, descomente as linhas com 'print(cat)' abaixo:
+    def print_twice(string):
+        pass
+        # print(cat)  # NameError
+        # print(cat)  # NameError
+
+    # ----- Trecho da função 'parametros' copiado para demonstração -----
+
+    def cat_twice(part1, part2):
+        cat = part1 + part2
+        print_twice(cat)
+
+    line1 = "Always look on the "
+    line2 = "bright side of life."
+
+    print("Executando a cadeia de funções para gerar o traceback:\n")
+    cat_twice(line1, line2)
+
+    print(
+        "\nA mensagem de erro inclui um 'traceback', que revela a função que "
+        "estava sendo executada quando o erro ocorreu, a função que a chamou, "
+        "e assim por diante. Nesse exemplo, o traceback indica que "
+        "'cat_twice' chamou 'print_twice', e o erro aconteceu dentro de "
+        "'print_twice'."
+    )
+    # A ordem das funções no traceback é a mesma que a ordem dos frames no
+    # diagrama de pilha. A função que está sendo executada no momento
+    # aparece no final.
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -335,4 +384,5 @@ if __name__ == "__main__":
     # repeticao()
     # variaveis_e_parametros_locais()
     # diagrama_de_pilha()
+    # tracebacks()
     pass
