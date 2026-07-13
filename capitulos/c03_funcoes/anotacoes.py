@@ -448,6 +448,59 @@ def depuracao():
     )
 
 
+def glossario():
+    """
+    Apresenta os principais termos técnicos estudados no Capítulo 3,
+    definindo conceitos fundamentais sobre funções, escopos e execução.
+    """
+    print("--- Glossário do Capítulo 3 ---\n")
+    from utilitarios import NEGRITO, PADRAO
+    print(
+        f"{NEGRITO}cabeçalho{PADRAO}: A primeira linha de uma definição "
+        "de função."
+    )
+    print(
+        f"{NEGRITO}corpo{PADRAO}: A sequência de instruções dentro de uma "
+        "definição de função."
+    )
+    print(
+        f"{NEGRITO}definição de função{PADRAO}: Uma instrução que cria uma "
+        "nova função."
+    )
+    print(
+        f"{NEGRITO}diagrama de pilha{PADRAO}: Uma representação gráfica de "
+        "uma pilha de funções, mostrando suas variáveis e os valores aos "
+        "quais elas se referem."
+    )
+    print(
+        f"{NEGRITO}frame{PADRAO}: Uma caixa em um diagrama de pilha que "
+        "representa uma chamada de função. Contém as variáveis locais e "
+        "os parâmetros da função."
+    )
+    print(
+        f"{NEGRITO}loop{PADRAO}: Uma instrução que executa uma ou mais "
+        "instruções de forma repetida."
+    )
+    print(
+        f"{NEGRITO}objeto de função{PADRAO}: Um valor criado por uma "
+        "definição de função. O nome da função é uma variável que se "
+        "refere a esse objeto."
+    )
+    print(
+        f"{NEGRITO}parâmetro{PADRAO}: Um nome utilizado dentro de uma "
+        "função para se referir ao valor passado como argumento."
+    )
+    print(
+        f"{NEGRITO}traceback{PADRAO}: Uma lista das funções que estavam "
+        "sendo executadas no momento em que ocorreu uma exceção, exibida para "
+        "ajudar a identificar a origem do erro."
+    )
+    print(
+        f"{NEGRITO}variável local{PADRAO}: Uma variável definida dentro de "
+        "uma função, que só pode ser acessada no escopo dessa função."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -460,4 +513,5 @@ if __name__ == "__main__":
     # tracebacks()
     # por_que_utilizar_funcoes()
     # depuracao()
+    # glossario()
     pass
