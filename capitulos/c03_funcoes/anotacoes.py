@@ -375,6 +375,38 @@ def tracebacks():
     # aparece no final.
 
 
+def por_que_utilizar_funcoes():
+    """
+    Explica de forma teórica as principais vantagens de modularizar programas
+    através da criação de funções (legibilidade, reutilização, redução de
+    redundâncias e facilidade de depuração).
+    """
+    print("--- Por que Utilizar Funções ---\n")
+    print(
+        "Se ainda não estiver claro por que dividimos um programa em funções, "
+        "saiba que há várias razões para isso:\n"
+    )
+    print(
+        "- Criar uma nova função oferece a oportunidade de nomear um conjunto "
+        "de instruções, o que torna o seu programa mais legível e mais fácil "
+        "de depurar."
+    )
+    print(
+        "- Além disso, as funções podem reduzir o tamanho do programa, "
+        "eliminando códigos repetitivos. Assim, se precisar fazer alguma "
+        "alteração, basta fazê-la em um único lugar."
+    )
+    print(
+        "- Dividir um programa longo em funções permite depurar cada parte "
+        "separadamente e depois integrá-las em um conjunto funcional."
+    )
+    print(
+        "- Funções bem projetadas muitas vezes são úteis em vários programas. "
+        "Uma vez que você escreve e depura uma função, pode reutilizá-la em "
+        "diferentes contextos."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -385,4 +417,5 @@ if __name__ == "__main__":
     # variaveis_e_parametros_locais()
     # diagrama_de_pilha()
     # tracebacks()
+    # por_que_utilizar_funcoes()
     pass
