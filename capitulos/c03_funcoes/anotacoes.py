@@ -211,6 +211,46 @@ def repeticao():
     print_n_verses(3)
 
 
+def variaveis_e_parametros_locais():
+    """
+    Demonstra o conceito de variáveis e parâmetros locais, ilustrando como
+    o escopo limita a existência e a visibilidade de dados dentro de funções.
+    """
+    print("--- Variáveis e Parâmetros Locais ---\n")
+    print(
+        "Quando criamos uma variável dentro de uma função, ela é 'local', "
+        "o que significa que só existe dentro do escopo dessa função. Esta "
+        "função, por exemplo, recebe dois argumentos, concatena-os e exibe "
+        "o resultado duas vezes.\n"
+    )
+
+    # ----- Trecho da função 'parametros' copiado para demonstração -----
+
+    # Definição de função que requer um argumento
+    def print_twice(string):  # (string) -> parâmetro da função
+        print(string)
+        print(string)
+
+    def cat_twice(part1, part2):
+        cat = part1 + part2
+        print_twice(cat)
+
+    line1 = "Always look on the "
+    line2 = "bright side of life."
+
+    cat_twice(line1, line2)
+
+    # Quando 'cat_twice' é executada, ela cria uma variável local chamada
+    # 'cat', que é destruída assim que a função termina. Se tentarmos exibi-la,
+    # receberemos um 'NameError'.
+    # Para testar o erro, descomente a linha abaixo:
+    # print(cat)  # NameError: name 'cat' is not defined
+
+    # Fora da função, 'cat' não está definida.
+    # Os parâmetros também são locais. Por exemplo, fora de 'cat_twice', não
+    # existem 'part1' ou 'part2'.
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -218,4 +258,5 @@ if __name__ == "__main__":
     # parametros()
     # chamando_funcoes()
     # repeticao()
+    # variaveis_e_parametros_locais()
     pass
