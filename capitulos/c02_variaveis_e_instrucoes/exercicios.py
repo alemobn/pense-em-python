@@ -1,4 +1,4 @@
-# Exercícios do Capítulo 1 - Variáveis e instruções
+# Exercícios do Capítulo 2 - Variáveis e instruções
 
 
 def exercicio_2_1():
