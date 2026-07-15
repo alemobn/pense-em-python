@@ -66,10 +66,31 @@ def exercicio_3_3():
     print_twice("String.")
 
 
+def exercicio_3_4():
+    """Exercício 4 (Capítulo 3)"""
+    print(
+        "Pergunte a um assistente virtual o que pode estar errado com esta "
+        "versão de 'print_twice':\n"
+    )
+
+    # Função de exemplo:
+    # def print_twice(string):
+    #     print(cat)
+    #     print(cat)
+
+    # Reposta do assistente:
+    print(
+        "Erro no Escopo/Nome (NameError): A função recebe o parâmetro com o "
+        "nome 'string', mas dentro do bloco tenta imprimir a variável 'cat', "
+        "que não foi definida. O correto seria usar 'print(string)'."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
     # exercicio_3_1()
     # exercicio_3_2()
     # exercicio_3_3()
+    # exercicio_3_4()
     pass
