@@ -86,6 +86,26 @@ def exercicio_3_4():
     )
 
 
+def exercicio_3_5():
+    """Exercício 5 (Capítulo 3)"""
+    print(
+        "Escreva uma função chamada 'print_right', que receba uma string "
+        "chamada 'text' como parâmetro e exiba essa string com espaços "
+        "suficientes à frente para que a última letra esteja alinhada na "
+        "40ª coluna da tela.\n"
+        "Dica: utilize a função 'len', o operador de concatenação de strings "
+        "(+) e o operador de repetição de strings (*).\n"
+    )
+
+    def print_right(text):
+        spaces = 40 - len(text)
+        print(" " * spaces + text)
+
+    print_right("Monty")
+    print_right("Python's")
+    print_right("Flying Circus")
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -93,4 +113,5 @@ if __name__ == "__main__":
     # exercicio_3_2()
     # exercicio_3_3()
     # exercicio_3_4()
+    # exercicio_3_5()
     pass
