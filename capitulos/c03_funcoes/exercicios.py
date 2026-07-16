@@ -53,8 +53,8 @@ def exercicio_3_3():
     # Texto: Escreva uma função com o nome de 'print_twice', que recebe uma
     # string como argumento, e exibe essa string duas vezes com uma quebra
     # de linha.
-    # Resposta:
 
+    # Resposta:
     def print_twice(string):
         """
         Recebe uma string como argumento e a exibe duas vezes,
@@ -97,6 +97,7 @@ def exercicio_3_5():
         "(+) e o operador de repetição de strings (*).\n"
     )
 
+    # Resposta:
     def print_right(text):
         spaces = 40 - len(text)
         print(" " * spaces + text)
@@ -116,6 +117,7 @@ def exercicio_3_6():
         "\n"
     )
 
+    # Resposta:
     def triangle(letra, inteiro):
         vezes = 1
         for _ in range(0, inteiro):
@@ -134,6 +136,7 @@ def exercicio_3_7():
         "Dica: utilize a letra 'H' para imprimir o retângulo.\n"
     )
 
+    # Resposta:
     def rectangle(letra, largura, altura):
         for _ in range(0, altura):
             print(letra * largura)
@@ -166,6 +169,7 @@ def exercicio_3_8():
         "que conta de 99 até 1:\n"
     )
 
+    # Resposta:
     def ajustar(numero):
         if numero == 0:
             return "no more bottles of beer"
