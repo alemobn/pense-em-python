@@ -125,6 +125,22 @@ def exercicio_3_6():
     triangle("L", 10)
 
 
+def exercicio_3_7():
+    """Exercício 7 (Capítulo 3)"""
+    print(
+        "Escreva uma função chamada 'rectangle' que receba uma string e dois "
+        "números inteiros e desenhe um retângulo com a largura e a altura "
+        "fornecidas, composto de cópias da string.\n"
+        "Dica: utilize a letra 'H' para imprimir o retângulo.\n"
+    )
+
+    def rectangle(letra, largura, altura):
+        for _ in range(0, altura):
+            print(letra * largura)
+
+    rectangle("H", 5, 4)
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -134,4 +150,5 @@ if __name__ == "__main__":
     # exercicio_3_4()
     # exercicio_3_5()
     # exercicio_3_6()
+    # exercicio_3_7()
     pass
