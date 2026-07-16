@@ -141,6 +141,63 @@ def exercicio_3_7():
     rectangle("H", 5, 4)
 
 
+def exercicio_3_8():
+    """Exercício 8 (Capítulo 3)"""
+    print(
+        "A música '99 Bottles of Beer' começa com este verso:\n"
+        "- 99 bottles of beer on the wall,\n"
+        "- 99 bottles of beer.\n"
+        "- Take one down, pass it around,\n"
+        "- 98 bottles of beer on the wall.\n"
+        "Em seguida, o segundo verso é semelhante, exceto que começa com 98 "
+        "garrafas e termina com 97. A música continua -- por um longo tempo "
+        "-- até que não se reste nenhuma garrafa de cerveja (bottles of beer)."
+    )
+    print(
+        "Escreva uma função chamada 'bottle_verse' que receba um número como "
+        "parâmetro e exiba o verso que começa com o número de garrafas "
+        "fornecido.\n"
+        "Dica: considere começar com uma função que possa exibir a primeira, "
+        "segunda ou última linha do verso, e depois utilize essa função para "
+        "escrever 'bottle_verse'.\n"
+        "Utilize esta chamada de função para exibir o primeiro verso: "
+        "'bottle_verse(99)'\n"
+        "Se quiser exibir a música inteira, pode utilizar este loop 'for', "
+        "que conta de 99 até 1:\n"
+    )
+
+    def ajustar(numero):
+        if numero == 0:
+            return "no more bottles of beer"
+        elif numero == 1:
+            return "1 bottle of beer"
+        else:
+            return f"{numero} bottles of beer"
+
+    def exibir_linha_topo(numero):
+        sujeito = ajustar(numero)
+        print(f"{sujeito.capitalize()} on the wall,")
+
+    def exibir_linha_meio(numero):
+        print(f"{ajustar(numero)}.")
+        print("Take one down, pass it around,")
+
+    def exibir_linha_fim(numero):
+        print(f"{ajustar(numero - 1)} on the wall.")
+
+    def bottle_verse(numero):
+        exibir_linha_topo(numero)
+        exibir_linha_meio(numero)
+        exibir_linha_fim(numero)
+
+    bottle_verse(99)  # sem loop for
+
+    # Exemplo de loop for:
+    for n in range(99, 0, -1):
+        bottle_verse(n)
+        print()
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -151,4 +208,5 @@ if __name__ == "__main__":
     # exercicio_3_5()
     # exercicio_3_6()
     # exercicio_3_7()
+    # exercicio_3_8()
     pass
