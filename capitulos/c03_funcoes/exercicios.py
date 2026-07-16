@@ -106,6 +106,25 @@ def exercicio_3_5():
     print_right("Flying Circus")
 
 
+def exercicio_3_6():
+    """Exercício 6 (Capítulo 3)"""
+    print(
+        "Escreva uma função chamada 'triangle' que receba uma string e um "
+        "número inteiro, e desenhe um triângulo com a altura especificada, "
+        "composto de múltiplas cópias da string.\n"
+        "Dica: utilize a letra 'L' para imprimir o triângulo com altura de 5."
+        "\n"
+    )
+
+    def triangle(letra, inteiro):
+        vezes = 1
+        for _ in range(0, inteiro):
+            print(letra * vezes)
+            vezes += 1
+
+    triangle("L", 10)
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -114,4 +133,5 @@ if __name__ == "__main__":
     # exercicio_3_3()
     # exercicio_3_4()
     # exercicio_3_5()
+    # exercicio_3_6()
     pass
