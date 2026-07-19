@@ -2,7 +2,7 @@
 Capítulo 4: Funções e interfaces
 
 Tópicos estudados:
-- Módulo jupyturtle
+- Módulo jupyturtle (turtle)
 - Desenhando um quadrado
 - Encapsulamento e generalização
 - Desenhando um círculo por aproximação
@@ -41,5 +41,5 @@ def modulo_turtle():
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
-    modulo_turtle()
+    # modulo_turtle()
     pass
