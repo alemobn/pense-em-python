@@ -38,8 +38,42 @@ def modulo_turtle():
     done()
 
 
+def desenhando_um_quadrado():
+    """
+    Introdução aos gráficos de tartaruga
+    """
+    print("--- text ---\n")
+    from turtle import Turtle, forward, left
+
+    # Turtle()
+
+    # forward(50)
+    # left(90)
+
+    # forward(50)
+    # left(90)
+
+    # forward(50)
+    # left(90)
+
+    # forward(50)
+    # left(90)
+
+    # done()
+
+    # Como esse programa repete o mesmo par de linha quatro vezes,
+    # podemos fazer a mesma coisa de forma mais concisa utilizando
+    # um loop for:
+
+    Turtle()
+    for i in range(4):
+        forward(50)
+        left(90)
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
     # modulo_turtle()
+    # desenhando_um_quadrado()
     pass
