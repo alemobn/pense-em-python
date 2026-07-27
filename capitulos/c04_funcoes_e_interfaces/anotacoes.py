@@ -71,9 +71,46 @@ def desenhando_um_quadrado():
         left(90)
 
 
+def encapsulamento_e_generalizacao():
+    """
+    Demonstra os conceitos de encapsulamento e generalização
+    desenhando polígonos com o módulo turtle (Capítulo 4)
+    """
+    print("--- Encapsulamento e Generalização ---\n")
+
+    from turtle import Turtle, done, forward, left
+
+    # Coloca o código de desenho do quadrado em uma função 'square',
+    # encapsulando a repetição do fluxo em um único bloco.
+    def square(length):
+        for _ in range(4):
+            forward(length)
+            left(90)
+
+    Turtle()
+    # square(30)
+    # square(60)
+
+    # Generaliza o conceito do quadrado para desenhar qualquer polígono
+    # regular de 'n' lados com comprimento 'length'.
+    def polygon(n, length):
+        angle = 360 / n
+        for _ in range(n):
+            forward(length)
+            left(angle)
+
+    # Quando uma função tem vários argumentos numéricos, é fácil esquecer
+    # o que eles representam ou a ordem em que devem ser fornecidos. Por isso
+    # é boa prática incluir os nomes dos parâmetros (argumentos nomeados).
+    polygon(n=7, length=30)
+
+    done()
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
     # modulo_turtle()
     # desenhando_um_quadrado()
+    # encapsulamento_e_generalizacao()
     pass
