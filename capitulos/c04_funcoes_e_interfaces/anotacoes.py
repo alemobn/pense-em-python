@@ -42,7 +42,7 @@ def desenhando_um_quadrado():
     """
     Introdução aos gráficos de tartaruga
     """
-    print("--- text ---\n")
+    print("--- Desenhando um Quadrado ---\n")
     from turtle import Turtle, forward, left
 
     # Turtle()
