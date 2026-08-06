@@ -107,10 +107,44 @@ def encapsulamento_e_generalizacao():
     done()
 
 
+def desenhando_um_circulo_por_aproximacao():
+    """
+    Demonstra a criação de um círculo aproximando-o por um polígono
+    com múltiplos lados usando o módulo turtle (Capítulo 4)
+    """
+    print("--- Desenhando um Círculo por Aproximação ---\n")
+
+    import math
+    from turtle import Turtle, done, forward, left
+
+    # Reutiliza a função de polígono para desenhar uma figura de 'n' lados
+    def polygon(n, length):
+        angle = 360 / n
+        for _ in range(n):
+            forward(length)
+            left(angle)
+
+    # A função 'circle' recebe o raio do círculo como parâmetro. Ela calcula
+    # a circunferência de um círculo com o raio fornecido.
+    # O parâmetro 'n' representa o número de lados do polígono aproximado,
+    # e o valor de 'circumference / n' determina o comprimento de cada um
+    # desses lados.
+    def circle(radius):
+        circumference = 2 * math.pi * radius
+        n = 30
+        length = circumference / n
+        polygon(n, length)
+
+    Turtle()
+    circle(30)
+    done()
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
     # modulo_turtle()
     # desenhando_um_quadrado()
     # encapsulamento_e_generalizacao()
+    # desenhando_um_circulo_por_aproximacao()
     pass
