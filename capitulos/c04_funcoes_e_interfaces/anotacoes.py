@@ -140,6 +140,57 @@ def desenhando_um_circulo_por_aproximacao():
     done()
 
 
+def refatorando_o_codigo():
+    """
+    Demonstra a refatoração do código de desenho criando a função
+    'polyline' para reutilização em polígonos, arcos e círculos (Capítulo 4)
+    """
+    print("--- Refatorando o Código (Polyline) ---\n")
+
+    # Agora, vamos escrever uma versão mais geral da função 'circle',
+    # chamada 'arc', que recebe um segundo parâmetro, 'angle', e desenha
+    # um arco de círculo correspondente ao ângulo especificado.
+
+    import math
+    from turtle import Turtle, done, forward, left
+
+    # A função 'polyline' recebe como parâmetros o número de segmentos de
+    # linha a serem desenhados, 'n'; o comprimento dos segmentos, 'length',
+    # e o ângulo entre eles, 'angle'.
+    def polyline(n, length, angle):
+        for _ in range(n):
+            forward(length)
+            left(angle)
+
+    # Reescrevendo a função 'polygon' para utilizar 'polyline':
+    def polygon(n, length):
+        angle = 360.0 / n
+        polyline(n, length, angle)
+
+    # A função 'arc' é similar à 'circle', mas com a diferença de que ela
+    # calcula 'arc_length' (comprimento do arco), que corresponde a uma
+    # fração da circunferência de um círculo.
+    # Utilizando 'polyline' para escrever a função 'arc':
+    def arc(radius, angle):
+        arc_length = 2 * math.pi * radius * angle / 360
+        n = 30
+        length = arc_length / n
+        step_angle = angle / n
+        polyline(n, length, step_angle)
+
+    # Reescrevendo a função 'circle' para utilizar a função 'arc'
+    def circle(radius):
+        arc(radius, 360)
+
+    # Para garantir que essas funções funcionem como esperado, vamos
+    # utilizá-las para desenhar algo que se assemelhe a um caracol.
+    Turtle()
+    polygon(n=20, length=9)
+    arc(radius=70, angle=70)
+    circle(radius=10)
+    done()
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -147,4 +198,5 @@ if __name__ == "__main__":
     # desenhando_um_quadrado()
     # encapsulamento_e_generalizacao()
     # desenhando_um_circulo_por_aproximacao()
+    # refatorando_o_codigo()
     pass
