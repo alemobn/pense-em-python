@@ -282,6 +282,44 @@ def plano_de_desenvolvimento():
     print("Implementações 'circle' e 're_circle' prontas para teste.")
 
 
+def docstrings():
+    """
+    Explica a importância das docstrings e como documentar interfaces
+    de funções em Python (Capítulo 4)
+    """
+    print("--- Docstrings e Documentação de Interface ---\n")
+
+    from turtle import forward, left
+
+    def polyline(n, length, angle):
+        """
+        Desenha segmentos de linha com o comprimento (length) e o ângulo
+        (angle) fornecidos entre eles.
+
+        n: número inteiro de segmentos de linha
+        length: comprimento dos segmentos (número)
+        angle: ângulo entre os segmentos em graus (número)
+        """
+        for _ in range(n):
+            forward(length)
+            left(angle)
+
+    print("O que é uma Docstring?")
+    print("- Uma string no início da função para explicar sua interface.")
+    print("- Por convenção, utiliza-se aspas triplas (strings multilinhas).\n")
+
+    print("Boas práticas para escrever Docstrings:")
+    print("- Explicar o que a função faz (sem focar no 'como' funciona).")
+    print("- Descrever como cada parâmetro influencia o comportamento.")
+    print("- Indicar o tipo esperado de cada parâmetro se não for óbvio.\n")
+
+    print(
+        "Escrever documentação é parte vital do design de interface. "
+        "Se for difícil descrever uma função, a interface provavelmente "
+        "precisa ser simplificada ou aprimorada."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -292,4 +330,5 @@ if __name__ == "__main__":
     # refatorando_o_codigo()
     # diagrama_de_pilha()
     # plano_de_desenvolvimento()
+    # docstrings()
     pass
