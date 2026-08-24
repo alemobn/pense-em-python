@@ -219,6 +219,69 @@ def diagrama_de_pilha():
     print("Cada chamada de função empilha um novo frame isolado na memória.\n")
 
 
+def plano_de_desenvolvimento():
+    """
+    Sintetiza o processo de desenvolvimento via encapsulamento,
+    generalização e refatoração (Capítulo 4)
+    """
+    print("--- Plano de Desenvolvimento de Software ---\n")
+
+    import math
+    from turtle import forward, left
+
+    # Explicação do fluxo de design incremental
+    print("Passos do Plano de Desenvolvimento:")
+    print("1. Escreva um script pequeno e funcional sem funções.")
+    print("2. Encapsule o código funcional dentro de uma função.")
+    print("3. Generalize a função adicionando os parâmetros necessários.")
+    print("4. Repita os passos anteriores estruturando o código em módulos.")
+    print("5. Refatore para eliminar código duplicado e melhorar abstrações.")
+    print()
+
+    print("Interface vs. Implementação:")
+    print(
+        "- Interface: O 'o quê' (nome da função, parâmetros e o que ela "
+        "promete fazer)."
+    )
+    print("- Implementação: O 'como' (o código interno que executa a lógica).")
+    print()
+
+    # ------ Trecho copiado da função 'encapsulamento_e_generalizacao' ------
+    def polygon(n, length):
+        angle = 360 / n
+        for _ in range(n):
+            forward(length)
+            left(angle)
+
+    # ------ Trecho copiado da função 'refatorando_o_codigo' ------
+    def polyline(n, length, angle):
+        for _ in range(n):
+            forward(length)
+            left(angle)
+
+    def arc(radius, angle):
+        arc_length = 2 * math.pi * radius * angle / 360
+        n = 30
+        length = arc_length / n
+        step_angle = angle / n
+        polyline(n, length, step_angle)
+
+    # Primeira versão da interface 'circle' usando a implementação via
+    # 'polygon'
+    def circle(radius):
+        circumference = 2 * math.pi * radius
+        n = 30
+        length = circumference / n
+        polygon(n, length)
+
+    # Versão refatorada que altera a implementação interna para usar 'arc',
+    # mantendo a interface (uso) exatamente idêntica para o chamador.
+    def re_circle(radius):
+        arc(radius, 360)
+
+    print("Implementações 'circle' e 're_circle' prontas para teste.")
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -228,4 +291,5 @@ if __name__ == "__main__":
     # desenhando_um_circulo_por_aproximacao()
     # refatorando_o_codigo()
     # diagrama_de_pilha()
+    # plano_de_desenvolvimento()
     pass
