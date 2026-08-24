@@ -191,6 +191,34 @@ def refatorando_o_codigo():
     done()
 
 
+def diagrama_de_pilha():
+    """
+    Explica a sequência de chamadas de funções e o escopo local de parâmetros
+    utilizando um diagrama de pilha (Capítulo 4)
+    """
+    print("--- Diagrama de Pilha e Escopo Local ---\n")
+
+    # Na função 'refatorando_o_codigo', quando chamamos a função 'circle', ela
+    # chama a função 'arc', que por sua vez chama a função 'polyline'.
+    #
+    # Representação da sequência de frames na pilha de chamadas (Stack):
+    # ------------------------------------------------------------------------
+    # __main__:
+    #   └── circle(radius=30)
+    #         └── arc(radius=30, angle=360)
+    #               └── polyline(n=30, length=6.28, angle=12.0)
+    # ------------------------------------------------------------------------
+    #
+    # É importante observar que o parâmetro 'angle' na função 'polyline'
+    # armazena o ângulo de cada passo (step_angle), enquanto 'angle' na
+    # função 'arc' representa o ângulo total do arco. Como os parâmetros e
+    # variáveis são locais ao frame de execução da função, eles residem em
+    # endereços de memória independentes na pilha.
+
+    print("Conceito teórico: Variáveis locais e pilha de execução.")
+    print("Cada chamada de função empilha um novo frame isolado na memória.\n")
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -199,4 +227,5 @@ if __name__ == "__main__":
     # encapsulamento_e_generalizacao()
     # desenhando_um_circulo_por_aproximacao()
     # refatorando_o_codigo()
+    # diagrama_de_pilha()
     pass
