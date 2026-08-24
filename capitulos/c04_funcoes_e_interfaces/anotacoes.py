@@ -320,6 +320,43 @@ def docstrings():
     )
 
 
+def depuracao():
+    """
+    Explica os conceitos de pré-condições, pós-condições e contratos
+    de interface aplicados à depuração de software (Capítulo 4)
+    """
+    print("--- Depuração: Pré-condições e Pós-condições ---\n")
+
+    # Explicação teórica sobre contratos de interface e depuração
+    print("O Contrato de Interface:")
+    print("- A função chamadora fornece argumentos específicos.")
+    print("- A função chamada executa a tarefa prometida.\n")
+
+    print("Pré-condições:")
+    print("- Requisitos que devem ser atendidos antes da execução.")
+    print(
+        "- Exemplo em 'polyline': 'n' deve ser inteiro, 'length' e "
+        "'angle' números."
+    )
+    print(
+        "- Responsabilidade: Da função chamadora. Se violadas, o erro é dela."
+    )
+    print()
+
+    print("Pós-condições:")
+    print("- O resultado esperado ou efeitos colaterais após a execução.")
+    print("- Exemplo: Desenhar os segmentos na tela e mover a tartaruga.")
+    print(
+        "- Responsabilidade: Da função chamada. Se violadas, o bug está nela."
+    )
+    print()
+
+    print(
+        "Ter pré e pós-condições bem definidas elimina ambiguidades "
+        "e acelera drasticamente a depuração de código."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -331,4 +368,5 @@ if __name__ == "__main__":
     # diagrama_de_pilha()
     # plano_de_desenvolvimento()
     # docstrings()
+    # depuracao()
     pass
