@@ -314,7 +314,7 @@ def docstrings():
     print("- Indicar o tipo esperado de cada parâmetro se não for óbvio.\n")
 
     print(
-        "Escrever documentação é parte vital do design de interface. "
+        "Escrever documentação é parte -vital do design de interface. "
         "Se for difícil descrever uma função, a interface provavelmente "
         "precisa ser simplificada ou aprimorada."
     )
@@ -357,6 +357,64 @@ def depuracao():
     )
 
 
+def glossario():
+    """
+    Exibe os principais termos e conceitos aprendidos ao longo do Capítulo 4
+    """
+    print("--- Glossário do Capítulo 4 ---\n")
+    from utilitarios import NEGRITO, PADRAO
+
+    print(
+        f"{NEGRITO}argumento nomeado{PADRAO}: Um argumento que inclui o nome "
+        "do parâmetro."
+    )
+    print(
+        f"{NEGRITO}canvas{PADRAO}: Uma janela utilizada para exibir elementos "
+        "gráficos, como linhas, círculos, retângulos e outras formas."
+    )
+    print(
+        f"{NEGRITO}design de interface{PADRAO}: Um processo para projetar a "
+        "interface de uma função, que inclui os parâmetros que ela deve "
+        "receber."
+    )
+    print(
+        f"{NEGRITO}docstring{PADRAO}: Uma string que aparece no topo da "
+        "definição de uma função para documentar a interface da função."
+    )
+    print(
+        f"{NEGRITO}encapsulamento{PADRAO}: O processo de transformar uma "
+        "sequência de instruções em uma definição de função."
+    )
+    print(
+        f"{NEGRITO}generalização{PADRAO}: O processo de substituir algo "
+        "desnecessariamente específico (como um número) por algo mais "
+        "genérico (como uma variável ou parâmetro)."
+    )
+    print(
+        f"{NEGRITO}plano de desenvolvimento{PADRAO}: Um processo para "
+        "escrever programas."
+    )
+    print(
+        f"{NEGRITO}pós-condição{PADRAO}: Um requisito que deve ser atendido "
+        "pela função ao final de sua execução."
+    )
+    print(
+        f"{NEGRITO}pré-condição{PADRAO}: Um requisito que deve ser atendido "
+        "pela função chamadora antes que a função possa ser executada "
+        "corretamente."
+    )
+    print(
+        f"{NEGRITO}refatoração{PADRAO}: O processo de modificar um programa "
+        "funcional para melhorar as interfaces das funções e outras "
+        "qualidades do código."
+    )
+    print(
+        f"{NEGRITO}string multilinhas{PADRAO}: Uma string delimitada por "
+        "aspas triplas que pode se estender por mais de uma linha em um "
+        "programa."
+    )
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas da função que deseja testar
 
@@ -369,4 +427,5 @@ if __name__ == "__main__":
     # plano_de_desenvolvimento()
     # docstrings()
     # depuracao()
+    # glossario()
     pass
