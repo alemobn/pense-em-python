@@ -47,9 +47,33 @@ def exercicio_4_1():
     done()
 
 
+def exercicio_4_2():
+    """Exercício 2 (Capítulo 4)"""
+    print(
+        "Escreva uma função chamada 'rhombus' que desenhe um losango com "
+        "um comprimento de lado e um ângulo interno fornecidos."
+    )
+    print()
+
+    def rhombus(length, angle):
+        """
+        Desenha um losango dados o comprimento do lado e um ângulo interno.
+        """
+        for _ in range(2):
+            forward(length)
+            left(angle)
+            forward(length)
+            left(180 - angle)
+
+    Turtle()
+    rhombus(100, 60)
+    done()
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
     # jump(100)
     # exercicio_4_1()
+    # exercicio_4_2()
     pass
