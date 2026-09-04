@@ -70,10 +70,49 @@ def exercicio_4_2():
     done()
 
 
+def exercicio_4_3():
+    """Exercício 3 (Capítulo 4)"""
+    print(
+        "Desenvolva uma função mais genérica chamada 'parallelogram', "
+        "que desenhe um quadrilátero com lados paralelos. Em seguida, "
+        "reescreva as funções 'rectangle' e 'rhombus' para que "
+        "utilizem a função 'parallelogram'."
+    )
+    print()
+
+    def parallelogram(length1, length2, angle):
+        """
+        Desenha um paralelogramo com lados de comprimentos 'length1' e
+        'length2' e ângulo interno 'angle'.
+        """
+        for _ in range(2):
+            forward(length1)
+            left(angle)
+            forward(length2)
+            left(180 - angle)
+
+    def rectangle(width, height):
+        """Reescreve 'rectangle' usando a abstração 'parallelogram'."""
+        parallelogram(width, height, 90)
+
+    def rhombus(length, angle):
+        """Reescreve 'rhombus' usando a abstração 'parallelogram'."""
+        parallelogram(length, length, angle)
+
+    Turtle()
+    rectangle(100, 50)
+    jump(150)
+    rhombus(60, 60)
+    jump(150)
+    parallelogram(100, 60, 60)
+    done()
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
     # jump(100)
     # exercicio_4_1()
     # exercicio_4_2()
+    # exercicio_4_3()
     pass
