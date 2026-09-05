@@ -147,6 +147,51 @@ def exercicio_4_4():
     done()
 
 
+def exercicio_4_5():
+    """Exercício 5 (Capítulo 4)"""
+    print(
+        "Escreva um conjunto de funções mais genéricas para desenhar "
+        "flores como esta. Dica: use a função 'arc' para escrever "
+        "uma função chamada 'petal', que desenhe uma pétala de flor."
+    )
+    print()
+
+    import math
+
+    def polyline(n, length, angle):
+        """Desenha 'n' segmentos de reta com o comprimento e ângulo dados."""
+        from turtle import forward, left
+        for _ in range(n):
+            forward(length)
+            left(angle)
+
+    def arc(r, angle):
+        """Desenha um arco de círculo com raio 'r' e ângulo 'angle'."""
+        arc_length = 2 * math.pi * r * angle / 360
+        n = int(arc_length / 3) + 1
+        step_length = arc_length / n
+        step_angle = angle / n
+        polyline(n, step_length, step_angle)
+
+    def petal(r, angle):
+        """Desenha uma pétala formada por dois arcos opostos."""
+        for _ in range(2):
+            arc(r, angle)
+            left(180 - angle)
+
+    def flower(n, r, angle):
+        """Desenha uma flor com 'n' pétalas."""
+        for _ in range(n):
+            petal(r, angle)
+            left(360 / n)
+
+    Turtle()
+    flower(7, 80, 60)
+    jump(200)
+    flower(10, 80, 40)
+    done()
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -155,4 +200,5 @@ if __name__ == "__main__":
     # exercicio_4_2()
     # exercicio_4_3()
     # exercicio_4_4()
+    # exercicio_4_5()
     pass
