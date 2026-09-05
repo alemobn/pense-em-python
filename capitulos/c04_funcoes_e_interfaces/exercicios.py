@@ -108,6 +108,45 @@ def exercicio_4_3():
     done()
 
 
+def exercicio_4_4():
+    """Exercício 4 (Capítulo 4)"""
+    print(
+        "Escreva um conjunto de funções mais genéricas para desenhar "
+        "formas como esta (tortas divididas em triângulos)."
+    )
+    print()
+
+    def triangle(length, angle):
+        """
+        Desenha um segmento triangular (fatia da torta) e retorna
+        ao centro pronto para a próxima fatia.
+        """
+        angle_base = (180 - angle) / 2
+        forward(length)
+        left(180 - angle_base)
+        import math
+
+        base = 2 * length * math.sin(math.radians(angle / 2))
+        forward(base)
+        left(180 - angle_base)
+        forward(length)
+        left(180)
+
+    def draw_pie(n, length):
+        """Desenha um polígono dividido em 'n' fatias triangulares."""
+        angle = 360 / n
+        for _ in range(n):
+            triangle(length, angle)
+
+    Turtle()
+    draw_pie(5, 60)
+    jump(150)
+    draw_pie(6, 60)
+    jump(150)
+    draw_pie(7, 60)
+    done()
+
+
 if __name__ == "__main__":
     # Tire o '#' apenas do exercício que deseja testar
 
@@ -115,4 +154,5 @@ if __name__ == "__main__":
     # exercicio_4_1()
     # exercicio_4_2()
     # exercicio_4_3()
+    # exercicio_4_4()
     pass
